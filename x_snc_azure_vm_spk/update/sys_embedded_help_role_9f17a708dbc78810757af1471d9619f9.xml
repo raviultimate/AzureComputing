@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_snc_azure_vm_spk.azure_vm_admin" name="x_snc_azure_vm_spk.azure_vm_admin">cf17a708dbc78810757af1471d9619f6</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-14 06:56:34</sys_created_on>
+        <sys_id>9f17a708dbc78810757af1471d9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cf17a708dbc78810757af1471d9619f6</sys_name>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_9f17a708dbc78810757af1471d9619f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-14 06:56:34</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
