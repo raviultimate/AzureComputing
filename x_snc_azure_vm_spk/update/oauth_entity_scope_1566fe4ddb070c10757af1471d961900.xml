@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_scope">
+    <oauth_entity_scope action="INSERT_OR_UPDATE">
+        <in_default_profile>true</in_default_profile>
+        <name>APIs</name>
+        <oauth_entity display_value="Azure Compute">46fa6b80db0b8810757af1471d961989</oauth_entity>
+        <oauth_entity_scope>https://management.core.windows.net//user_impersonation</oauth_entity_scope>
+        <sys_class_name>oauth_entity_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-17 06:03:04</sys_created_on>
+        <sys_id>1566fe4ddb070c10757af1471d961900</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>APIs</sys_name>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>oauth_entity_scope_1566fe4ddb070c10757af1471d961900</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-17 09:13:38</sys_updated_on>
+    </oauth_entity_scope>
+</record_update>
