@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_azure_vm_spk.AzureVm</id>
+        <multiple_connections>false</multiple_connections>
+        <name>AzureVm</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-17 06:49:41</sys_created_on>
+        <sys_id>89420b05db470c10757af1471d9619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_azure_vm_spk.AzureVm</sys_name>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_alias_89420b05db470c10757af1471d9619cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-17 06:49:41</sys_updated_on>
+        <type>credential</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</application>
+        <file_path/>
+        <instance_id>58151fc6db314454387021c405961954</instance_id>
+        <instance_name>empravispokes</instance_name>
+        <name>sys_alias_89420b05db470c10757af1471d9619cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_snc_azure_vm_spk.AzureVm</id><multiple_connections>false</multiple_connections><name>AzureVm</name><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-02-17 06:49:41</sys_created_on><sys_id>89420b05db470c10757af1471d9619cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_azure_vm_spk.AzureVm</sys_name><sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package><sys_policy/><sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope><sys_update_name>sys_alias_89420b05db470c10757af1471d9619cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-02-17 06:49:41</sys_updated_on><type>credential</type></sys_alias></record_update>]]></payload>
+        <payload_hash>70814161</payload_hash>
+        <record_name>x_snc_azure_vm_spk.AzureVm</record_name>
+        <reverted_from/>
+        <source>6b58af00db0b8810757af1471d96198d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-17 06:49:41</sys_created_on>
+        <sys_id>a342cb05db470c10757af1471d961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17051e8e0c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-17 06:49:41</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>eb42cb054f470c10f3d9d1d766ad2681</update_guid>
+        <update_guid_history>eb42cb054f470c10f3d9d1d766ad2681:70814161</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-17 14:38:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>0016640b1bb04b10800005381dec9fa9</sys_id>
+        <sys_metadata>89420b05db470c10757af1471d9619cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_azure_vm_spk.AzureVm</sys_name>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope_delete display_value="">8a5e4ce255dd4ef996e970a02fe3c7b9</sys_scope_delete>
+        <sys_update_name>sys_alias_89420b05db470c10757af1471d9619cb</sys_update_name>
+        <sys_update_version display_value="sys_alias_89420b05db470c10757af1471d9619cb">a342cb05db470c10757af1471d961982</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-17 14:38:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

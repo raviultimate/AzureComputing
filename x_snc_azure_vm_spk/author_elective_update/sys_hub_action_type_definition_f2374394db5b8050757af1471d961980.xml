@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>list_images_by_resource</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>List Image’s by Resource</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-27 09:31:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f2374394db5b8050757af1471d961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Image’s by Resource</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_f2374394db5b8050757af1471d961980</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-27 09:31:27</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=f2374394db5b8050757af1471d961980"/>
+    <sys_variable_value action="DELETE" query="document_key=f2374394db5b8050757af1471d961980"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</application>
+        <file_path/>
+        <instance_id>58151fc6db314454387021c405961954</instance_id>
+        <instance_name>empravispokes</instance_name>
+        <name>sys_hub_action_type_definition_f2374394db5b8050757af1471d961980</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>list_images_by_resource</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>List Image’s by Resource</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-02-27 09:31:27</sys_created_on><sys_domain>global</sys_domain><sys_id>f2374394db5b8050757af1471d961980</sys_id><sys_mod_count>0</sys_mod_count><sys_name>List Image’s by Resource</sys_name><sys_overrides/><sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package><sys_policy/><sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope><sys_update_name>sys_hub_action_type_definition_f2374394db5b8050757af1471d961980</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-02-27 09:31:27</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=f2374394db5b8050757af1471d961980"/><sys_variable_value action="delete_multiple" query="document_key=f2374394db5b8050757af1471d961980"/></record_update>]]></payload>
+        <payload_hash>885341827</payload_hash>
+        <record_name>List Image’s by Resource</record_name>
+        <reverted_from/>
+        <source>6b58af00db0b8810757af1471d96198d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-27 09:31:28</sys_created_on>
+        <sys_id>4b374394db5b8050757af1471d961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17085fc96220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-27 09:31:28</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>83374394375b8050e5f7ba0cf0527683</update_guid>
+        <update_guid_history>83374394375b8050e5f7ba0cf0527683:885341827</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-27 09:35:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>82884d7699d9469095e97e2f3e9c1541</sys_id>
+        <sys_metadata>f2374394db5b8050757af1471d961980</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Image’s by Resource</sys_name>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope_delete display_value="">8a5e4ce255dd4ef996e970a02fe3c7b9</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_f2374394db5b8050757af1471d961980</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_f2374394db5b8050757af1471d961980">4b374394db5b8050757af1471d961983</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-27 09:35:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
