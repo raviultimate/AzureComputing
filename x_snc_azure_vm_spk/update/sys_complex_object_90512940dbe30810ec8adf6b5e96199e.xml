@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDdc512940b7e308106fdcebd4c9b0239d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FDdc512940b7e308106fdcebd4c9b0239d":{"managedDisk":{"storageAccountType":"String","storageAccountType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"storageAccountType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"managedDisk.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"managedDisk\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"osType":"String","osType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"osType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"caching":"String","caching.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"caching\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"createOption":"String","createOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"createOption\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"diskSizeGB":"Integer","diskSizeGB.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"diskSizeGB\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"}},"FlowDesigner:FDdc512940b7e308106fdcebd4c9b0239d.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDdc512940b7e308106fdcebd4c9b0239d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"osDisk\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"65000\",\"uiUniqueId\":\"1ebeb7b7-5039-49da-a129-8badb506d545\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-09 17:43:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>90512940dbe30810ec8adf6b5e96199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDdc512940b7e308106fdcebd4c9b0239d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_90512940dbe30810ec8adf6b5e96199e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-09 17:43:24</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

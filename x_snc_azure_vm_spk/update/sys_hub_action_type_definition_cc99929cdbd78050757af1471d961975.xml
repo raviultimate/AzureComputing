@@ -10,7 +10,7 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <ih_action>true</ih_action>
+        <ih_action>false</ih_action>
         <internal_name>list_all_available_sizes_in_availability_set</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.availability_setname}}","label":"action➛Availability SetName","type":"action","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].status_code}}","label":"step➛List all available sizes in Availability SET➛Status Code","type":"step","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].response_body}}","label":"step➛List all available sizes in Availability SET➛Response Body","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
         <latest_snapshot>fb0e72a9dbdf0450757af1471d9619c2</latest_snapshot>
@@ -19,13 +19,13 @@
         <natlang/>
         <outputs/>
         <outputs/>
-        <state>published</state>
+        <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:11:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>cc99929cdbd78050757af1471d961975</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>List all available sizes in Availability SET</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_cc99929cdbd78050757af1471d961975</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:03:51</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>72db96dcdbd78050757af1471d9619ee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:57</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=72db96dcdbd78050757af1471d9619ee"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -114,10 +114,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:57</sys_created_on>
         <sys_id>f2dbd6dcdbd78050757af1471d96190c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:57</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  
+   gs.info('response =&gt;'+inputs.responseBody);
 
   new azureComputeUtils().postErrorHandling(inputs, outputs);
 
@@ -879,14 +881,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>e2db96dcdbd78050757af1471d9619d5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-28 07:43:52</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e2db96dcdbd78050757af1471d9619d5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -925,10 +927,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>7adb96dcdbd78050757af1471d9619e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:56</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1595,14 +1597,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>72db96dcdbd78050757af1471d9619ee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:57</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=72db96dcdbd78050757af1471d9619ee"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1627,10 +1629,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:57</sys_created_on>
         <sys_id>f2dbd6dcdbd78050757af1471d96190c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:57</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  
+   gs.info('response =&gt;'+inputs.responseBody);
 
   new azureComputeUtils().postErrorHandling(inputs, outputs);
 
@@ -2392,14 +2396,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>e2db96dcdbd78050757af1471d9619d5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-28 07:43:52</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e2db96dcdbd78050757af1471d9619d5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2438,10 +2442,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 06:21:56</sys_created_on>
         <sys_id>7adb96dcdbd78050757af1471d9619e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 06:21:56</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-10 11:21:38</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">

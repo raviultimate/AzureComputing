@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD8a526598c5eb0810d92f09c4e14c694c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FD8a526598c5eb0810d92f09c4e14c694c":{"Id":"String","Id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD8a526598c5eb0810d92f09c4e14c694c.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Network Interface\",\"mandatory\":\"false\",\"child_name\":\"Id\",\"uiUniqueId\":\"90465908-5abf-41ec-961e-dc6dc22ab46c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8a526598c5eb0810d92f09c4e14c694c\",\"child_label\":\"Id\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"child_type\":\"string\",\"order\":\"9\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"56992705-c395-4dc1-b044-eee09aaac191\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-10 12:26:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4e526598dbeb0810ec8adf6b5e96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD8a526598c5eb0810d92f09c4e14c694c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_4e526598dbeb0810ec8adf6b5e96194c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-10 12:26:22</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
