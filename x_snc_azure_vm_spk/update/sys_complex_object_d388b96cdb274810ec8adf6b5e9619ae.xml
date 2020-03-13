@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1388b96c22274810e5ac40f57877b1ae</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FD1388b96c22274810e5ac40f57877b1ae":{"storageAccountType":"String","storageAccountType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage AccountType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD1388b96c22274810e5ac40f57877b1ae.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1388b96c22274810e5ac40f57877b1ae\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Managed Disk\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"65000\",\"uiUniqueId\":\"8f323c69-705d-4296-ab24-324db154ff9d\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-11 08:41:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d388b96cdb274810ec8adf6b5e9619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD1388b96c22274810e5ac40f57877b1ae</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_d388b96cdb274810ec8adf6b5e9619ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-11 08:41:52</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
