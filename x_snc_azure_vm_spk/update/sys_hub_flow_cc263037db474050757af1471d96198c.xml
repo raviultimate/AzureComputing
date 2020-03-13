@@ -70,34 +70,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
         <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>6</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>372c6d10db2f0810ec8adf6b5e96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"offer":{"$cv":{"$c":"java.lang.String","$v":"WindowsServer"}},"exactVersion":{"$cv":{"$c":"java.lang.String","$v":"14393.3504.2002070914"}},"publisher":{"$cv":{"$c":"java.lang.String","$v":"MicrosoftWindowsServer"}},"sku":{"$cv":{"$c":"java.lang.String","$v":"2016-Datacenter"}},"version":{"$cv":{"$c":"java.lang.String","$v":"latest"}}},"complexObjectSchema":{"FlowDesigner:FDe52b6110f32f0810a4909baa4a3a96d8":{"offer":"String","offer.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Offer\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"exactVersion":"String","exactVersion.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ExactVersion\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"publisher":"String","publisher.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Publisher\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"sku":"String","sku.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Sku\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"version":"String","version.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Version\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe52b6110f32f0810a4909baa4a3a96d8.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe52b6110f32f0810a4909baa4a3a96d8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Image Reference\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"65000\",\"uiUniqueId\":\"110e9005-ec66-404d-bb22-6489155835e8\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">ddabdd4cdba30810ec8adf6b5e961933</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>9</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>3b2c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"id":{"$cv":{"$c":"java.lang.String","$v":"/subscriptions/dd6fa666-2687-4ada-86bd-34e027ec339a/resourceGroups/firstResource/providers/Microsoft.Network/networkInterfaces/firstvm618"}}},"complexObjectSchema":{"FlowDesigner:FDe92b61102c2f081085d7ad984762b9dd":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe92b61102c2f081085d7ad984762b9dd.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Network Interface\",\"mandatory\":\"false\",\"child_name\":\"Id\",\"uiUniqueId\":\"90465908-5abf-41ec-961e-dc6dc22ab46c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe92b61102c2f081085d7ad984762b9dd\",\"child_label\":\"Id\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"child_type\":\"string\",\"order\":\"9\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"56992705-c395-4dc1-b044-eee09aaac191\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">6912fc9cdb6b0810ec8adf6b5e9619ca</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -108,20 +80,6 @@
         <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
         <value>centralus</value>
         <variable display_value="">8c45400edb5b4450757af1471d961974</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>772c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
-        <value>{"complexObject":{"storageAccountType":{"$cv":{"$c":"java.lang.String","$v":"StandardSSD_LRS"}}},"complexObjectSchema":{"FlowDesigner:FDe52b6110522f0810fed3cc91e88bc3df":{"storageAccountType":"String","storageAccountType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage AccountType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe52b6110522f0810fed3cc91e88bc3df.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe52b6110522f0810fed3cc91e88bc3df\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Managed Disk\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"65000\",\"uiUniqueId\":\"b6d5881b-73d5-464e-b423-6d6878b294af\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">752ba110db2f0810ec8adf6b5e961904</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -150,20 +108,6 @@
         <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
         <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenoVM"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"true"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD692b61108f2f081044ccfc8331ff23d6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
         <variable display_value="">513751c8dba30810ec8adf6b5e9619e4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>8</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>bf2c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"vmSize":{"$cv":{"$c":"java.lang.String","$v":"Standard_A1"}}},"complexObjectSchema":{"FlowDesigner:FDed2b6110e82f0810dc2987f9c55676db":{"vmSize":"String","vmSize.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"VmSize\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDed2b6110e82f0810dc2987f9c55676db.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDed2b6110e82f0810dc2987f9c55676db\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"HardwareProfile\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"65000\",\"uiUniqueId\":\"2a77d715-e26e-4b9c-b337-10ec0fdf8f9f\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">69abdd4cdba30810ec8adf6b5e96193f</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -292,34 +236,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
         <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>6</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>372c6d10db2f0810ec8adf6b5e96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"offer":{"$cv":{"$c":"java.lang.String","$v":"WindowsServer"}},"exactVersion":{"$cv":{"$c":"java.lang.String","$v":"14393.3504.2002070914"}},"publisher":{"$cv":{"$c":"java.lang.String","$v":"MicrosoftWindowsServer"}},"sku":{"$cv":{"$c":"java.lang.String","$v":"2016-Datacenter"}},"version":{"$cv":{"$c":"java.lang.String","$v":"latest"}}},"complexObjectSchema":{"FlowDesigner:FDe52b6110f32f0810a4909baa4a3a96d8":{"offer":"String","offer.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Offer\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"exactVersion":"String","exactVersion.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ExactVersion\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"publisher":"String","publisher.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Publisher\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"sku":"String","sku.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Sku\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"version":"String","version.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Version\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe52b6110f32f0810a4909baa4a3a96d8.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe52b6110f32f0810a4909baa4a3a96d8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Image Reference\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"65000\",\"uiUniqueId\":\"110e9005-ec66-404d-bb22-6489155835e8\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">ddabdd4cdba30810ec8adf6b5e961933</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>9</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>3b2c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"id":{"$cv":{"$c":"java.lang.String","$v":"/subscriptions/dd6fa666-2687-4ada-86bd-34e027ec339a/resourceGroups/firstResource/providers/Microsoft.Network/networkInterfaces/firstvm618"}}},"complexObjectSchema":{"FlowDesigner:FDe92b61102c2f081085d7ad984762b9dd":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe92b61102c2f081085d7ad984762b9dd.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Network Interface\",\"mandatory\":\"false\",\"child_name\":\"Id\",\"uiUniqueId\":\"90465908-5abf-41ec-961e-dc6dc22ab46c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe92b61102c2f081085d7ad984762b9dd\",\"child_label\":\"Id\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"child_type\":\"string\",\"order\":\"9\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"56992705-c395-4dc1-b044-eee09aaac191\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">6912fc9cdb6b0810ec8adf6b5e9619ca</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -330,20 +246,6 @@
         <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
         <value>centralus</value>
         <variable display_value="">8c45400edb5b4450757af1471d961974</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>772c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
-        <value>{"complexObject":{"storageAccountType":{"$cv":{"$c":"java.lang.String","$v":"StandardSSD_LRS"}}},"complexObjectSchema":{"FlowDesigner:FDe52b6110522f0810fed3cc91e88bc3df":{"storageAccountType":"String","storageAccountType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage AccountType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe52b6110522f0810fed3cc91e88bc3df.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe52b6110522f0810fed3cc91e88bc3df\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Managed Disk\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"65000\",\"uiUniqueId\":\"b6d5881b-73d5-464e-b423-6d6878b294af\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">752ba110db2f0810ec8adf6b5e961904</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -372,20 +274,6 @@
         <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
         <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenoVM"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"true"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD692b61108f2f081044ccfc8331ff23d6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
         <variable display_value="">513751c8dba30810ec8adf6b5e9619e4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>8</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>bf2c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"vmSize":{"$cv":{"$c":"java.lang.String","$v":"Standard_A1"}}},"complexObjectSchema":{"FlowDesigner:FDed2b6110e82f0810dc2987f9c55676db":{"vmSize":"String","vmSize.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"VmSize\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDed2b6110e82f0810dc2987f9c55676db.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDed2b6110e82f0810dc2987f9c55676db\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"HardwareProfile\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"65000\",\"uiUniqueId\":\"2a77d715-e26e-4b9c-b337-10ec0fdf8f9f\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">69abdd4cdba30810ec8adf6b5e96193f</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>

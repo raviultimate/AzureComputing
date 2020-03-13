@@ -4,13 +4,13 @@
         <name>FD68a51148e5a308107a21e89131cfb029</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
-        <serialized_content>{"FlowDesigner:FD68a51148e5a308107a21e89131cfb029":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD68a51148e5a308107a21e89131cfb029.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD68a51148e5a308107a21e89131cfb029\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"5\",\"max_length\":\"8000\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD68a51148e5a308107a21e89131cfb029":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD68a51148e5a308107a21e89131cfb029.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD68a51148e5a308107a21e89131cfb029\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"11\",\"max_length\":\"8000\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-09 16:52:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>6ca51148dba30810ec8adf6b5e961929</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>FD68a51148e5a308107a21e89131cfb029</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -18,7 +18,7 @@
         <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_complex_object_6ca51148dba30810ec8adf6b5e961929</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:19:52</sys_updated_on>
+        <sys_updated_on>2020-03-12 08:44:19</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
 </record_update>
