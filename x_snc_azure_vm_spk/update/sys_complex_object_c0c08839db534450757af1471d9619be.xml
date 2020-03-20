@@ -13,9 +13,9 @@
         <sys_mod_count>3</sys_mod_count>
         <sys_name>FDccc08839db534450388b6162262d00bd</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_complex_object_c0c08839db534450757af1471d9619be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 11:40:05</sys_updated_on>

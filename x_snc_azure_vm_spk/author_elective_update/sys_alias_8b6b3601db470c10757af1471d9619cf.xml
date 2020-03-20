@@ -22,7 +22,7 @@
     </sys_alias>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</application>
+        <application display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</application>
         <file_path/>
         <instance_id>58151fc6db314454387021c405961954</instance_id>
         <instance_name>empravispokes</instance_name>
@@ -55,10 +55,10 @@
         <sys_metadata>8b6b3601db470c10757af1471d9619cf</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_azure_vm_spk.AzureCompute</sys_name>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_scope_delete display_value="">8a5e4ce255dd4ef996e970a02fe3c7b9</sys_scope_delete>
         <sys_update_name>sys_alias_8b6b3601db470c10757af1471d9619cf</sys_update_name>
         <sys_update_version display_value="sys_alias_8b6b3601db470c10757af1471d9619cf">cb9e3a81db470c10757af1471d96196a</sys_update_version>

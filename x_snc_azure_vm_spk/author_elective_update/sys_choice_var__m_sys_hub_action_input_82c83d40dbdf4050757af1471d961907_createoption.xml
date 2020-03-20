@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="createoption" table="var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>createoption</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-17 11:19:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c546d926db6b4c10ec8adf6b5e96199a</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-17 12:58:27</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>createoption</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Attach</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-17 11:21:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae86dd26db6b4c10ec8adf6b5e961933</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-17 12:58:27</sys_updated_on>
+            <value>Attach</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>createoption</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Empty</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-17 11:21:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a86dd26db6b4c10ec8adf6b5e961934</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-17 12:58:27</sys_updated_on>
+            <value>Empty</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>createoption</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FromImage</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-17 11:21:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2686dd26db6b4c10ec8adf6b5e961935</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-17 12:58:28</sys_updated_on>
+            <value>FromImage</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>createoption</element>
+            <name>var__m_sys_hub_action_input_82c83d40dbdf4050757af1471d961907</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-17 11:19:55</sys_created_on>
+            <sys_id>0146d926db6b4c10ec8adf6b5e96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-17 11:19:55</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

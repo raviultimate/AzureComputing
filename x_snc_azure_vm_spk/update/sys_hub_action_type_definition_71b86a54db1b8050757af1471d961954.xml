@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>list_versions</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.publisher_name}}","label":"action➛Publisher Name","type":"action","ref":""},{"name":"{{action.offer}}","label":"action➛Offer","type":"action","ref":""},{"name":"{{action.skus}}","label":"action➛Skus","type":"action","ref":""},{"name":"{{action._filter}}","label":"action➛$filter","type":"action","ref":""},{"name":"{{step[7ca6bb42-b4e0-4939-9090-14930897162f].resourcepath}}","label":"step➛Pre Processing➛resourcePath","type":"step","ref":""},{"name":"{{step[7ca6bb42-b4e0-4939-9090-14930897162f].url}}","label":"step➛Pre Processing➛url","type":"step","ref":""},{"name":"{{step[770a3e59-f7c5-47ed-bde8-4b2139bef294].status_code}}","label":"step➛List Versions➛Status Code","type":"step","ref":""},{"name":"{{step[770a3e59-f7c5-47ed-bde8-4b2139bef294].response_body}}","label":"step➛List Versions➛Response Body","type":"step","ref":""},{"name":"{{step[ab27b7d0-83e1-4816-a262-37e174a05fd2].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[ab27b7d0-83e1-4816-a262-37e174a05fd2].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[ab27b7d0-83e1-4816-a262-37e174a05fd2].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[7ca6bb42-b4e0-4939-9090-14930897162f].resourcepath1}}","label":"step➛Pre Processing➛resourcePath","type":"step","ref":""},{"name":"{{step[ab27b7d0-83e1-4816-a262-37e174a05fd2].versions}}","label":"step➛Post Processing➛Versions","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>3f57cb85db2b8810ec8adf6b5e961953</latest_snapshot>
+        <latest_snapshot>5b68d0abdb638010ec8adf6b5e9619ea</latest_snapshot>
         <master_snapshot>a78e32e9dbdf0450757af1471d961960</master_snapshot>
         <name>List Versions</name>
         <natlang/>
@@ -25,15 +25,15 @@
         <sys_created_on>2020-02-27 07:18:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>71b86a54db1b8050757af1471d961954</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name>List Versions</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_71b86a54db1b8050757af1471d961954</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:43:17</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -94,14 +94,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:34</sys_created_on>
         <sys_id>31c6765cdb1b8050757af1471d9619b6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:27:47</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=31c6765cdb1b8050757af1471d9619b6"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -126,13 +126,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>4ec6765cdb1b8050757af1471d9619bc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:27:47</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs); 
   var resourcePath = ['subscriptions/',inputs.subscriptionId,'/providers/Microsoft.Compute/locations/',inputs.location,'/publishers/',inputs.publisherName,'/artifacttypes/vmimage/offers/',inputs.offer,'/skus/',inputs.skus].join('');
-  
- 
   outputs.resourcepath = resourcePath;
 })(inputs, outputs);
 </value>
@@ -290,7 +289,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -371,7 +370,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -452,7 +451,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -533,7 +532,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -614,7 +613,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -696,7 +695,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:11:24</sys_updated_on>
@@ -732,7 +731,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:42:59</sys_updated_on>
@@ -1000,7 +999,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:52:18</sys_updated_on>
@@ -1032,14 +1031,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>8ac6765cdb1b8050757af1471d9619cd</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8ac6765cdb1b8050757af1471d9619cd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1064,63 +1063,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>c2c6765cdb1b8050757af1471d9619d3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:28</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-   var responseBody = JSON.parse(inputs['responseBody']);
-  gs.info('type'+responseBody);
-  
-   var publisherNames =[];
-  var data=[];
- /* var prp = responseBody.split(',');
-  //gs.info('love'+typeof responseBody[0]);
-  prp.forEach(function(property){
-    var realProperty =JSON.parse(property);
-    gs.info('love'+realProperty.name);
-     publisherNames.push({
-      label: realProperty.name,
-      name: realProperty.name
-    });
-  
-  });*/
- // gs.info()
-    
-   for(var property in responseBody){
-   
-   gs.info('Hello'+responseBody[property]['name']);
-   publisherNames.push({
-        label :responseBody[property]['name'],
-        name :responseBody[property]['name']
+    var successCodes = ['200', '202', '201'];
+    var arrayUtil = new global.ArrayUtil();
+    if (arrayUtil.contains(successCodes, inputs.status)) {
+        var responseBody = JSON.parse(inputs['responseBody']);
+        var versions = [];
+        var data = [];
+        for (var property in responseBody) {
+            versions.push({
+                label: responseBody[property]['name'],
+                name: responseBody[property]['name']
 
-      });
-   }
-  
-/*  if(inputs.status == 200 || inputs.status == 201){
-    
-    
-    responseBody.forEach(function(property){
-      publisherNames.push({
-        label :property.name,
-        name :property.name
+            });
+        }
+        versions.push({
+            label: 'latest',
+            name: 'latest'
 
-      });
-    });
-    */
-    
-   
-    
-    
-   outputs.versions = {
-      data:publisherNames
-    };
-  
-
-
-  
-})(inputs, outputs);
-</value>
+        });
+        outputs.versions = {
+            data: versions
+        };
+        outputs.status = 'Success';
+    } else {
+        new AzureComputeUtils().postErrorHandling(inputs, outputs);
+    }
+})(inputs, outputs);</value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=8ac6765cdb1b8050757af1471d9619cd"/>
@@ -1239,7 +1212,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:45:46</sys_updated_on>
@@ -1320,7 +1293,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:23</sys_updated_on>
@@ -1402,7 +1375,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -1483,7 +1456,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -1564,7 +1537,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:25</sys_updated_on>
@@ -1579,7 +1552,265 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=71b86a54db1b8050757af1471d961954^sys_idNOT IN95eaa694db1b8050757af1471d961918,a9eaee94db1b8050757af1471d9619aa,a9eaee94db1b8050757af1471d9619b0,a9eaee94db1b8050757af1471d9619b6,adeaa694db1b8050757af1471d96191e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=71b86a54db1b8050757af1471d961954^sys_idNOT IN1e08986bdb638010ec8adf6b5e96197e,4e08986bdb638010ec8adf6b5e961963,95eaa694db1b8050757af1471d961918,adeaa694db1b8050757af1471d96191e,e608986bdb638010ec8adf6b5e961998"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1b133064-a72c-445c-a997-dd2394737c03</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>offer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Offer</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
+        <model_id>71b86a54db1b8050757af1471d961954</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>1e08986bdb638010ec8adf6b5e96197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1e08986bdb638010ec8adf6b5e96197e^sys_idNOT INd208986bdb638010ec8adf6b5e961985"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">1e08986bdb638010ec8adf6b5e96197e</action_input>
+        <action_inputs/>
+        <action_type display_value="List Offers">29c8ae54db1b8050757af1471d961905</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>d208986bdb638010ec8adf6b5e961985</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:35</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d208986bdb638010ec8adf6b5e961985"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>d208986bdb638010ec8adf6b5e961985</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>1608986bdb638010ec8adf6b5e961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:58</sys_updated_on>
+        <value>{{action.subscription_id}}</value>
+        <variable display_value="">c56ef650db5b8050757af1471d961984</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>d208986bdb638010ec8adf6b5e961985</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>9a08986bdb638010ec8adf6b5e961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:58</sys_updated_on>
+        <value>{{action.location}}</value>
+        <variable display_value="">456ef650db5b8050757af1471d96198b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>d208986bdb638010ec8adf6b5e961985</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>d608986bdb638010ec8adf6b5e961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:58</sys_updated_on>
+        <value>{{action.publisher_name}}</value>
+        <variable display_value="">e382d867db638010ec8adf6b5e9619c7</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3455c72c-3d69-4b9e-9ee2-68dc8f90391f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>publisher_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Publisher Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
+        <model_id>71b86a54db1b8050757af1471d961954</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:57</sys_created_on>
+        <sys_id>4e08986bdb638010ec8adf6b5e961963</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e08986bdb638010ec8adf6b5e961963^sys_idNOT IN9e08986bdb638010ec8adf6b5e96196b"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">4e08986bdb638010ec8adf6b5e961963</action_input>
+        <action_inputs/>
+        <action_type display_value="List Publishers">17d8aa54db1b8050757af1471d9619bf</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:57</sys_created_on>
+        <sys_id>9e08986bdb638010ec8adf6b5e96196b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:35</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9e08986bdb638010ec8adf6b5e96196b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>9e08986bdb638010ec8adf6b5e96196b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:57</sys_created_on>
+        <sys_id>9e08986bdb638010ec8adf6b5e96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:57</sys_updated_on>
+        <value>{{action.location}}</value>
+        <variable display_value="">08920fd0db5b8050757af1471d961991</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>9e08986bdb638010ec8adf6b5e96196b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:57</sys_created_on>
+        <sys_id>da08986bdb638010ec8adf6b5e96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:57</sys_updated_on>
+        <value>{{action.subscription_id}}</value>
+        <variable display_value="">88920fd0db5b8050757af1471d96198a</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1646,253 +1877,10 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 07:27:39</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3455c72c-3d69-4b9e-9ee2-68dc8f90391f</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>publisher_name</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Publisher Name</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
-        <model_id>71b86a54db1b8050757af1471d961954</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <next_element/>
-        <order>3</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>a9eaee94db1b8050757af1471d9619aa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 07:27:40</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1b133064-a72c-445c-a997-dd2394737c03</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>offer</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Offer</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
-        <model_id>71b86a54db1b8050757af1471d961954</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <next_element/>
-        <order>4</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>a9eaee94db1b8050757af1471d9619b0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 09:02:28</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b13fdbf5-ca4e-464e-bbc2-426300059ba4</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>skus</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Skus</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
-        <model_id>71b86a54db1b8050757af1471d961954</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <next_element/>
-        <order>5</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>a9eaee94db1b8050757af1471d9619b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 09:02:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1970,7 +1958,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 09:02:28</sys_updated_on>
@@ -1985,6 +1973,100 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b13fdbf5-ca4e-464e-bbc2-426300059ba4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skus</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Skus</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Versions">71b86a54db1b8050757af1471d961954</model>
+        <model_id>71b86a54db1b8050757af1471d961954</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:59</sys_created_on>
+        <sys_id>e608986bdb638010ec8adf6b5e961998</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e608986bdb638010ec8adf6b5e961998^sys_idNOT INae08986bdb638010ec8adf6b5e96199e"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">e608986bdb638010ec8adf6b5e961998</action_input>
+        <action_inputs/>
+        <action_type display_value="List Sku's">e63bfc50db638850757af1471d9619db</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:59</sys_created_on>
+        <sys_id>ae08986bdb638010ec8adf6b5e96199e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:35</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ae08986bdb638010ec8adf6b5e96199e"/>
     <sys_hub_action_output action="delete_multiple" query="model=71b86a54db1b8050757af1471d961954^sys_idNOT IN033d3e10db5b8050757af1471d9619d5,16300741db2b8810ec8adf6b5e961981,433d3e10db5b8050757af1471d9619de"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2054,7 +2136,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -2137,7 +2219,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
@@ -2220,7 +2302,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -2253,14 +2335,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:34</sys_created_on>
         <sys_id>31c6765cdb1b8050757af1471d9619b6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:27:47</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=31c6765cdb1b8050757af1471d9619b6"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2285,13 +2367,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>4ec6765cdb1b8050757af1471d9619bc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:27:47</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs); 
   var resourcePath = ['subscriptions/',inputs.subscriptionId,'/providers/Microsoft.Compute/locations/',inputs.location,'/publishers/',inputs.publisherName,'/artifacttypes/vmimage/offers/',inputs.offer,'/skus/',inputs.skus].join('');
-  
- 
   outputs.resourcepath = resourcePath;
 })(inputs, outputs);
 </value>
@@ -2449,7 +2530,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -2530,7 +2611,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -2611,7 +2692,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -2692,7 +2773,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -2773,7 +2854,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:45</sys_updated_on>
@@ -2855,7 +2936,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:11:24</sys_updated_on>
@@ -2891,7 +2972,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:42:59</sys_updated_on>
@@ -3159,7 +3240,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:52:18</sys_updated_on>
@@ -3191,14 +3272,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>8ac6765cdb1b8050757af1471d9619cd</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8ac6765cdb1b8050757af1471d9619cd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3223,63 +3304,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-27 08:19:35</sys_created_on>
         <sys_id>c2c6765cdb1b8050757af1471d9619d3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:28</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-   var responseBody = JSON.parse(inputs['responseBody']);
-  gs.info('type'+responseBody);
-  
-   var publisherNames =[];
-  var data=[];
- /* var prp = responseBody.split(',');
-  //gs.info('love'+typeof responseBody[0]);
-  prp.forEach(function(property){
-    var realProperty =JSON.parse(property);
-    gs.info('love'+realProperty.name);
-     publisherNames.push({
-      label: realProperty.name,
-      name: realProperty.name
-    });
-  
-  });*/
- // gs.info()
-    
-   for(var property in responseBody){
-   
-   gs.info('Hello'+responseBody[property]['name']);
-   publisherNames.push({
-        label :responseBody[property]['name'],
-        name :responseBody[property]['name']
+    var successCodes = ['200', '202', '201'];
+    var arrayUtil = new global.ArrayUtil();
+    if (arrayUtil.contains(successCodes, inputs.status)) {
+        var responseBody = JSON.parse(inputs['responseBody']);
+        var versions = [];
+        var data = [];
+        for (var property in responseBody) {
+            versions.push({
+                label: responseBody[property]['name'],
+                name: responseBody[property]['name']
 
-      });
-   }
-  
-/*  if(inputs.status == 200 || inputs.status == 201){
-    
-    
-    responseBody.forEach(function(property){
-      publisherNames.push({
-        label :property.name,
-        name :property.name
+            });
+        }
+        versions.push({
+            label: 'latest',
+            name: 'latest'
 
-      });
-    });
-    */
-    
-   
-    
-    
-   outputs.versions = {
-      data:publisherNames
-    };
-  
-
-
-  
-})(inputs, outputs);
-</value>
+        });
+        outputs.versions = {
+            data: versions
+        };
+        outputs.status = 'Success';
+    } else {
+        new AzureComputeUtils().postErrorHandling(inputs, outputs);
+    }
+})(inputs, outputs);</value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=8ac6765cdb1b8050757af1471d9619cd"/>
@@ -3398,7 +3453,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:45:46</sys_updated_on>
@@ -3479,7 +3534,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:23</sys_updated_on>
@@ -3561,7 +3616,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -3642,7 +3697,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -3723,7 +3778,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:25</sys_updated_on>
@@ -3749,7 +3804,7 @@
         <sys_created_on>2020-03-13 03:43:08</sys_created_on>
         <sys_id>be578b85db2b8810ec8adf6b5e961978</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:08</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -3766,14 +3821,83 @@
         <sys_created_on>2020-03-13 03:43:08</sys_created_on>
         <sys_id>fa578b85db2b8810ec8adf6b5e961978</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:08</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
     </sys_hub_pill_compound>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954^sys_idNOT INe5eaee94db1b8050757af1471d9619a9,e5eaee94db1b8050757af1471d9619af,e5eaee94db1b8050757af1471d9619b5,e5eaee94db1b8050757af1471d9619bb,e9eaa694db1b8050757af1471d96191d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954^sys_idNOT IN0e08986bdb638010ec8adf6b5e96196a,2e08986bdb638010ec8adf6b5e96199d,5208986bdb638010ec8adf6b5e961984,e5eaee94db1b8050757af1471d9619a9,e9eaa694db1b8050757af1471d96191d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>publisher_name</element>
+        <help/>
+        <hint/>
+        <label>Publisher Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:57</sys_created_on>
+        <sys_id>0e08986bdb638010ec8adf6b5e96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>skus</element>
+        <help/>
+        <hint/>
+        <label>Skus</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:59</sys_created_on>
+        <sys_id>2e08986bdb638010ec8adf6b5e96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>offer</element>
+        <help/>
+        <hint/>
+        <label>Offer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+        <sys_id>5208986bdb638010ec8adf6b5e961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:21:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>location</element>
         <help/>
@@ -3788,81 +3912,12 @@
         <sys_id>e5eaee94db1b8050757af1471d9619a9</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 09:02:28</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>publisher_name</element>
-        <help/>
-        <hint/>
-        <label>Publisher Name</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>e5eaee94db1b8050757af1471d9619af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 07:27:40</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>offer</element>
-        <help/>
-        <hint/>
-        <label>Offer</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>e5eaee94db1b8050757af1471d9619b5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 09:02:28</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>skus</element>
-        <help/>
-        <hint/>
-        <label>Skus</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-27 07:27:40</sys_created_on>
-        <sys_id>e5eaee94db1b8050757af1471d9619bb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-27 09:02:29</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -3880,15 +3935,79 @@
         <sys_id>e9eaa694db1b8050757af1471d96191d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 07:27:40</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954^sys_idNOT INde08986bdb638010ec8adf6b5e961981,32181c6bdb638010ec8adf6b5e961933,aa08986bdb638010ec8adf6b5e96199b"/>
+    <sys_choice field="offer" table="var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>offer</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:21:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de08986bdb638010ec8adf6b5e961981</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="publisher_name" table="var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>publisher_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32181c6bdb638010ec8adf6b5e961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="skus" table="var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>skus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_71b86a54db1b8050757af1471d961954</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:21:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa08986bdb638010ec8adf6b5e96199b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_71b86a54db1b8050757af1471d961954^sys_idNOT IN56300741db2b8810ec8adf6b5e961986,8f3d3e10db5b8050757af1471d9619dc,df3d3e10db5b8050757af1471d9619e2"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
@@ -3904,9 +4023,9 @@
         <sys_id>56300741db2b8810ec8adf6b5e961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:11:58</sys_updated_on>
@@ -3927,9 +4046,9 @@
         <sys_id>8f3d3e10db5b8050757af1471d9619dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -3950,9 +4069,9 @@
         <sys_id>df3d3e10db5b8050757af1471d9619e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-27 08:47:47</sys_updated_on>
@@ -4023,21 +4142,21 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="List Versions">71b86a54db1b8050757af1471d961954</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c59e72e9dbdf0450757af1471d9619cc","name":"plan"}}</plan>
-        <snapshot>3f57cb85db2b8810ec8adf6b5e961953</snapshot>
+        <snapshot>5b68d0abdb638010ec8adf6b5e9619ea</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:06:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c59e72e9dbdf0450757af1471d9619cc</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:43:21</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:49</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4067,7 +4186,7 @@
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:12:06</sys_updated_on>
@@ -4135,7 +4254,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:17</sys_updated_on>
@@ -4403,7 +4522,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -4435,14 +4554,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:57</sys_created_on>
         <sys_id>678e32e9dbdf0450757af1471d961990</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=678e32e9dbdf0450757af1471d961990"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4453,13 +4572,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:58</sys_created_on>
         <sys_id>378e32e9dbdf0450757af1471d9619ca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs); 
   var resourcePath = ['subscriptions/',inputs.subscriptionId,'/providers/Microsoft.Compute/locations/',inputs.location,'/publishers/',inputs.publisherName,'/artifacttypes/vmimage/offers/',inputs.offer,'/skus/',inputs.skus].join('');
-  
- 
   outputs.resourcepath = resourcePath;
 })(inputs, outputs);
 </value>
@@ -4631,7 +4749,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -4712,7 +4830,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -4793,7 +4911,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -4874,7 +4992,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -4955,7 +5073,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -5037,7 +5155,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:19:03</sys_updated_on>
@@ -5069,14 +5187,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:58</sys_created_on>
         <sys_id>7f8e32e9dbdf0450757af1471d9619e5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7f8e32e9dbdf0450757af1471d9619e5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5087,63 +5205,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:59</sys_created_on>
         <sys_id>489e72e9dbdf0450757af1471d961908</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-   var responseBody = JSON.parse(inputs['responseBody']);
-  gs.info('type'+responseBody);
-  
-   var publisherNames =[];
-  var data=[];
- /* var prp = responseBody.split(',');
-  //gs.info('love'+typeof responseBody[0]);
-  prp.forEach(function(property){
-    var realProperty =JSON.parse(property);
-    gs.info('love'+realProperty.name);
-     publisherNames.push({
-      label: realProperty.name,
-      name: realProperty.name
-    });
-  
-  });*/
- // gs.info()
-    
-   for(var property in responseBody){
-   
-   gs.info('Hello'+responseBody[property]['name']);
-   publisherNames.push({
-        label :responseBody[property]['name'],
-        name :responseBody[property]['name']
+    var successCodes = ['200', '202', '201'];
+    var arrayUtil = new global.ArrayUtil();
+    if (arrayUtil.contains(successCodes, inputs.status)) {
+        var responseBody = JSON.parse(inputs['responseBody']);
+        var versions = [];
+        var data = [];
+        for (var property in responseBody) {
+            versions.push({
+                label: responseBody[property]['name'],
+                name: responseBody[property]['name']
 
-      });
-   }
-  
-/*  if(inputs.status == 200 || inputs.status == 201){
-    
-    
-    responseBody.forEach(function(property){
-      publisherNames.push({
-        label :property.name,
-        name :property.name
+            });
+        }
+        versions.push({
+            label: 'latest',
+            name: 'latest'
 
-      });
-    });
-    */
-    
-   
-    
-    
-   outputs.versions = {
-      data:publisherNames
-    };
-  
-
-
-  
-})(inputs, outputs);
-</value>
+        });
+        outputs.versions = {
+            data: versions
+        };
+        outputs.status = 'Success';
+    } else {
+        new AzureComputeUtils().postErrorHandling(inputs, outputs);
+    }
+})(inputs, outputs);</value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5276,7 +5368,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
@@ -5357,7 +5449,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:38</sys_updated_on>
@@ -5439,7 +5531,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -5520,7 +5612,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -5601,7 +5693,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:56</sys_updated_on>
@@ -5616,12 +5708,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=a78e32e9dbdf0450757af1471d961960^sys_idNOT IN238e32e9dbdf0450757af1471d96196f,678e32e9dbdf0450757af1471d961988,6b8e32e9dbdf0450757af1471d961961,6b8e32e9dbdf0450757af1471d961968,e78e32e9dbdf0450757af1471d961975"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a78e32e9dbdf0450757af1471d961960^sys_idNOT IN30289c6bdb638010ec8adf6b5e96194a,45289c6bdb638010ec8adf6b5e96196d,6b8e32e9dbdf0450757af1471d961961,6b8e32e9dbdf0450757af1471d961968,c5289c6bdb638010ec8adf6b5e96195b"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3455c72c-3d69-4b9e-9ee2-68dc8f90391f</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3455c72c-3d69-4b9e-9ee2-68dc8f90391f</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5629,7 +5721,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label/>
@@ -5652,7 +5744,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Publisher Name</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5677,16 +5769,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>238e32e9dbdf0450757af1471d96196f</sys_id>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>30289c6bdb638010ec8adf6b5e96194a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5698,11 +5790,52 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=30289c6bdb638010ec8adf6b5e96194a^sys_idNOT IN78289c6bdb638010ec8adf6b5e961950"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">30289c6bdb638010ec8adf6b5e96194a</action_input>
+        <action_inputs/>
+        <action_type display_value="List Publishers">17d8aa54db1b8050757af1471d9619bf</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>78289c6bdb638010ec8adf6b5e961950</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:44</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=78289c6bdb638010ec8adf6b5e961950"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>78289c6bdb638010ec8adf6b5e961950</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>78289c6bdb638010ec8adf6b5e961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+        <value>{{action.location}}</value>
+        <variable display_value="">08920fd0db5b8050757af1471d961991</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>78289c6bdb638010ec8adf6b5e961950</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>b4289c6bdb638010ec8adf6b5e961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+        <value>{{action.subscription_id}}</value>
+        <variable display_value="">88920fd0db5b8050757af1471d96198a</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b13fdbf5-ca4e-464e-bbc2-426300059ba4</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b13fdbf5-ca4e-464e-bbc2-426300059ba4</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5710,7 +5843,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label/>
@@ -5733,7 +5866,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Skus</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5758,16 +5891,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>678e32e9dbdf0450757af1471d961988</sys_id>
+        <sys_created_on>2020-03-20 09:22:26</sys_created_on>
+        <sys_id>45289c6bdb638010ec8adf6b5e96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5779,6 +5912,19 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45289c6bdb638010ec8adf6b5e96196d^sys_idNOT IN8d289c6bdb638010ec8adf6b5e961973"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">45289c6bdb638010ec8adf6b5e96196d</action_input>
+        <action_inputs/>
+        <action_type display_value="List Sku's">e63bfc50db638850757af1471d9619db</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:26</sys_created_on>
+        <sys_id>8d289c6bdb638010ec8adf6b5e961973</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:44</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d289c6bdb638010ec8adf6b5e961973"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -5845,7 +5991,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -5926,7 +6072,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -5945,7 +6091,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1b133064-a72c-445c-a997-dd2394737c03</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1b133064-a72c-445c-a997-dd2394737c03</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5953,7 +6099,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label/>
@@ -5976,7 +6122,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Offer</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -6001,16 +6147,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>e78e32e9dbdf0450757af1471d961975</sys_id>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>c5289c6bdb638010ec8adf6b5e96195b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6022,6 +6168,61 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5289c6bdb638010ec8adf6b5e96195b^sys_idNOT IN01289c6bdb638010ec8adf6b5e961962"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">c5289c6bdb638010ec8adf6b5e96195b</action_input>
+        <action_inputs/>
+        <action_type display_value="List Offers">29c8ae54db1b8050757af1471d961905</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>01289c6bdb638010ec8adf6b5e961962</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:44</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=01289c6bdb638010ec8adf6b5e961962"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>01289c6bdb638010ec8adf6b5e961962</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>05289c6bdb638010ec8adf6b5e961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+        <value>{{action.publisher_name}}</value>
+        <variable display_value="">e382d867db638010ec8adf6b5e9619c7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>01289c6bdb638010ec8adf6b5e961962</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>41289c6bdb638010ec8adf6b5e961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+        <value>{{action.subscription_id}}</value>
+        <variable display_value="">c56ef650db5b8050757af1471d961984</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>01289c6bdb638010ec8adf6b5e961962</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>c5289c6bdb638010ec8adf6b5e961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+        <value>{{action.location}}</value>
+        <variable display_value="">456ef650db5b8050757af1471d96198b</variable>
+    </sys_variable_value>
     <sys_hub_action_output action="delete_multiple" query="model=a78e32e9dbdf0450757af1471d961960^sys_idNOT IN409e72e9dbdf0450757af1471d96190c,449e72e9dbdf0450757af1471d961915,68408741db2b8810ec8adf6b5e961976"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -6091,7 +6292,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -6174,7 +6375,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -6257,7 +6458,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
@@ -6294,7 +6495,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:17</sys_updated_on>
@@ -6562,7 +6763,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -6594,14 +6795,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:57</sys_created_on>
         <sys_id>678e32e9dbdf0450757af1471d961990</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=678e32e9dbdf0450757af1471d961990"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6612,13 +6813,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:58</sys_created_on>
         <sys_id>378e32e9dbdf0450757af1471d9619ca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs); 
   var resourcePath = ['subscriptions/',inputs.subscriptionId,'/providers/Microsoft.Compute/locations/',inputs.location,'/publishers/',inputs.publisherName,'/artifacttypes/vmimage/offers/',inputs.offer,'/skus/',inputs.skus].join('');
-  
- 
   outputs.resourcepath = resourcePath;
 })(inputs, outputs);
 </value>
@@ -6790,7 +6990,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -6871,7 +7071,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -6952,7 +7152,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -7033,7 +7233,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -7114,7 +7314,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:58</sys_updated_on>
@@ -7196,7 +7396,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:19:03</sys_updated_on>
@@ -7228,14 +7428,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:58</sys_created_on>
         <sys_id>7f8e32e9dbdf0450757af1471d9619e5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7f8e32e9dbdf0450757af1471d9619e5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7246,63 +7446,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:05:59</sys_created_on>
         <sys_id>489e72e9dbdf0450757af1471d961908</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-   var responseBody = JSON.parse(inputs['responseBody']);
-  gs.info('type'+responseBody);
-  
-   var publisherNames =[];
-  var data=[];
- /* var prp = responseBody.split(',');
-  //gs.info('love'+typeof responseBody[0]);
-  prp.forEach(function(property){
-    var realProperty =JSON.parse(property);
-    gs.info('love'+realProperty.name);
-     publisherNames.push({
-      label: realProperty.name,
-      name: realProperty.name
-    });
-  
-  });*/
- // gs.info()
-    
-   for(var property in responseBody){
-   
-   gs.info('Hello'+responseBody[property]['name']);
-   publisherNames.push({
-        label :responseBody[property]['name'],
-        name :responseBody[property]['name']
+    var successCodes = ['200', '202', '201'];
+    var arrayUtil = new global.ArrayUtil();
+    if (arrayUtil.contains(successCodes, inputs.status)) {
+        var responseBody = JSON.parse(inputs['responseBody']);
+        var versions = [];
+        var data = [];
+        for (var property in responseBody) {
+            versions.push({
+                label: responseBody[property]['name'],
+                name: responseBody[property]['name']
 
-      });
-   }
-  
-/*  if(inputs.status == 200 || inputs.status == 201){
-    
-    
-    responseBody.forEach(function(property){
-      publisherNames.push({
-        label :property.name,
-        name :property.name
+            });
+        }
+        versions.push({
+            label: 'latest',
+            name: 'latest'
 
-      });
-    });
-    */
-    
-   
-    
-    
-   outputs.versions = {
-      data:publisherNames
-    };
-  
-
-
-  
-})(inputs, outputs);
-</value>
+        });
+        outputs.versions = {
+            data: versions
+        };
+        outputs.status = 'Success';
+    } else {
+        new AzureComputeUtils().postErrorHandling(inputs, outputs);
+    }
+})(inputs, outputs);</value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7435,7 +7609,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:03</sys_updated_on>
@@ -7516,7 +7690,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:38</sys_updated_on>
@@ -7598,7 +7772,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -7679,7 +7853,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -7760,7 +7934,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:56</sys_updated_on>
@@ -7775,7 +7949,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a78e32e9dbdf0450757af1471d961960^sys_idNOT IN0823cbc1db2b8810ec8adf6b5e961976,0f4a6054db238850757af1471d9619dc,336283c1db2b8810ec8adf6b5e9619af,36826050db238850757af1471d961988,4423cbc1db2b8810ec8adf6b5e961976,617fe818db238850757af1471d9619e2,72826050db238850757af1471d961988,756a6454db238850757af1471d961912,7b6283c1db2b8810ec8adf6b5e9619ae,84408741db2b8810ec8adf6b5e961929,a2626c10db238850757af1471d96193c,aa634305db2b8810ec8adf6b5e961986,ad7fe818db238850757af1471d9619e1,b0670f85db2b8810ec8adf6b5e96190f,b16a6454db238850757af1471d961912,c34a6054db238850757af1471d9619dd,cc408741db2b8810ec8adf6b5e961929,e6634305db2b8810ec8adf6b5e961986,ee626c10db238850757af1471d96193b,fc670f85db2b8810ec8adf6b5e96190e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a78e32e9dbdf0450757af1471d961960^sys_idNOT IN0823cbc1db2b8810ec8adf6b5e961976,0f4a6054db238850757af1471d9619dc,336283c1db2b8810ec8adf6b5e9619af,34d47f86db6f0c10ec8adf6b5e96192a,36826050db238850757af1471d961988,4423cbc1db2b8810ec8adf6b5e961976,617fe818db238850757af1471d9619e2,72826050db238850757af1471d961988,756a6454db238850757af1471d961912,7b6283c1db2b8810ec8adf6b5e9619ae,84408741db2b8810ec8adf6b5e961929,847814abdb638010ec8adf6b5e9619bb,a2626c10db238850757af1471d96193c,aa634305db2b8810ec8adf6b5e961986,ad7fe818db238850757af1471d9619e1,b0670f85db2b8810ec8adf6b5e96190f,b16a6454db238850757af1471d961912,b8289c6bdb638010ec8adf6b5e96192e,c07814abdb638010ec8adf6b5e9619bb,c34a6054db238850757af1471d9619dd,cc408741db2b8810ec8adf6b5e961929,e6634305db2b8810ec8adf6b5e961986,ee626c10db238850757af1471d96193b,f0289c6bdb638010ec8adf6b5e96192f,f8d47f86db6f0c10ec8adf6b5e961929,fc670f85db2b8810ec8adf6b5e96190e"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
         <extra_info/>
@@ -7786,7 +7960,7 @@
         <sys_created_on>2020-03-13 03:24:39</sys_created_on>
         <sys_id>0823cbc1db2b8810ec8adf6b5e961976</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:24:40</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7803,7 +7977,7 @@
         <sys_created_on>2020-03-10 08:21:30</sys_created_on>
         <sys_id>0f4a6054db238850757af1471d9619dc</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:21:31</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -7820,9 +7994,26 @@
         <sys_created_on>2020-03-13 03:21:38</sys_created_on>
         <sys_id>336283c1db2b8810ec8adf6b5e9619af</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:21:39</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>ebcd4121-2c83-4836-a7c8-018d5a3b7007</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:35:43</sys_created_on>
+        <sys_id>34d47f86db6f0c10ec8adf6b5e96192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:35:44</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
         <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
         <ui_id>ebcd4121-2c83-4836-a7c8-018d5a3b7007</ui_id>
@@ -7837,7 +8028,7 @@
         <sys_created_on>2020-03-10 07:47:38</sys_created_on>
         <sys_id>36826050db238850757af1471d961988</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:39</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7854,7 +8045,7 @@
         <sys_created_on>2020-03-13 03:24:39</sys_created_on>
         <sys_id>4423cbc1db2b8810ec8adf6b5e961976</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:24:40</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -7871,7 +8062,7 @@
         <sys_created_on>2020-03-10 08:44:03</sys_created_on>
         <sys_id>617fe818db238850757af1471d9619e2</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:44:04</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7888,7 +8079,7 @@
         <sys_created_on>2020-03-10 07:47:38</sys_created_on>
         <sys_id>72826050db238850757af1471d961988</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:39</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -7905,7 +8096,7 @@
         <sys_created_on>2020-03-10 08:21:57</sys_created_on>
         <sys_id>756a6454db238850757af1471d961912</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:21:58</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7922,7 +8113,7 @@
         <sys_created_on>2020-03-13 03:21:38</sys_created_on>
         <sys_id>7b6283c1db2b8810ec8adf6b5e9619ae</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:21:39</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -7939,7 +8130,7 @@
         <sys_created_on>2020-03-13 03:12:06</sys_created_on>
         <sys_id>84408741db2b8810ec8adf6b5e961929</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -7953,10 +8144,27 @@
         <prescription/>
         <source_ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</source_ui_id>
         <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:23:43</sys_created_on>
+        <sys_id>847814abdb638010ec8adf6b5e9619bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>ebcd4121-2c83-4836-a7c8-018d5a3b7007</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 07:47:04</sys_created_on>
         <sys_id>a2626c10db238850757af1471d96193c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:04</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7973,7 +8181,7 @@
         <sys_created_on>2020-03-13 03:25:55</sys_created_on>
         <sys_id>aa634305db2b8810ec8adf6b5e961986</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:56</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -7990,7 +8198,7 @@
         <sys_created_on>2020-03-10 08:44:03</sys_created_on>
         <sys_id>ad7fe818db238850757af1471d9619e1</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:44:04</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -8007,7 +8215,7 @@
         <sys_created_on>2020-03-13 03:43:16</sys_created_on>
         <sys_id>b0670f85db2b8810ec8adf6b5e96190f</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:17</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -8024,9 +8232,43 @@
         <sys_created_on>2020-03-10 08:21:57</sys_created_on>
         <sys_id>b16a6454db238850757af1471d961912</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:21:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[7ca6bb42-b4e0-4939-9090-14930897162f].resourcepath}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:24</sys_created_on>
+        <sys_id>b8289c6bdb638010ec8adf6b5e96192e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:27</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[7ca6bb42-b4e0-4939-9090-14930897162f].resourcepath}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:23:43</sys_created_on>
+        <sys_id>c07814abdb638010ec8adf6b5e9619bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:23:45</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
@@ -8041,7 +8283,7 @@
         <sys_created_on>2020-03-10 08:21:30</sys_created_on>
         <sys_id>c34a6054db238850757af1471d9619dd</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 08:21:31</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -8058,7 +8300,7 @@
         <sys_created_on>2020-03-13 03:12:06</sys_created_on>
         <sys_id>cc408741db2b8810ec8adf6b5e961929</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
         <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
@@ -8075,7 +8317,7 @@
         <sys_created_on>2020-03-13 03:25:55</sys_created_on>
         <sys_id>e6634305db2b8810ec8adf6b5e961986</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:25:56</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
@@ -8092,9 +8334,43 @@
         <sys_created_on>2020-03-10 07:47:04</sys_created_on>
         <sys_id>ee626c10db238850757af1471d96193b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 07:47:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:24</sys_created_on>
+        <sys_id>f0289c6bdb638010ec8adf6b5e96192f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:27</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>ebcd4121-2c83-4836-a7c8-018d5a3b7007</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>a78e32e9dbdf0450757af1471d961960</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[7ca6bb42-b4e0-4939-9090-14930897162f].resourcepath}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:35:43</sys_created_on>
+        <sys_id>f8d47f86db6f0c10ec8adf6b5e961929</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:35:44</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
@@ -8109,37 +8385,14 @@
         <sys_created_on>2020-03-13 03:43:16</sys_created_on>
         <sys_id>fc670f85db2b8810ec8adf6b5e96190e</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:43:17</sys_updated_on>
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>30eb2e36-2f95-4467-93f9-e15e05c2358e</ui_id>
     </sys_hub_pill_compound>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960^sys_idNOT IN238e32e9dbdf0450757af1471d961974,678e32e9dbdf0450757af1471d96198d,6b8e32e9dbdf0450757af1471d96196d,a38e32e9dbdf0450757af1471d961967,af8e32e9dbdf0450757af1471d961986"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>publisher_name</element>
-        <help/>
-        <hint/>
-        <label>Publisher Name</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>238e32e9dbdf0450757af1471d961974</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960^sys_idNOT IN0d289c6bdb638010ec8adf6b5e961972,6b8e32e9dbdf0450757af1471d96196d,8d289c6bdb638010ec8adf6b5e961960,a38e32e9dbdf0450757af1471d961967,f4289c6bdb638010ec8adf6b5e96194f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>skus</element>
         <help/>
@@ -8150,16 +8403,16 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>678e32e9dbdf0450757af1471d96198d</sys_id>
+        <sys_created_on>2020-03-20 09:22:26</sys_created_on>
+        <sys_id>0d289c6bdb638010ec8adf6b5e961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -8177,12 +8430,35 @@
         <sys_id>6b8e32e9dbdf0450757af1471d96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>offer</element>
+        <help/>
+        <hint/>
+        <label>Offer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>8d289c6bdb638010ec8adf6b5e961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -8200,9 +8476,9 @@
         <sys_id>a38e32e9dbdf0450757af1471d961967</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
@@ -8210,28 +8486,92 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>offer</element>
+        <element>publisher_name</element>
         <help/>
         <hint/>
-        <label>Offer</label>
+        <label>Publisher Name</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-02 06:05:57</sys_created_on>
-        <sys_id>af8e32e9dbdf0450757af1471d961986</sys_id>
+        <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+        <sys_id>f4289c6bdb638010ec8adf6b5e96194f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 06:05:57</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960^sys_idNOT IN89289c6bdb638010ec8adf6b5e96195e,f0289c6bdb638010ec8adf6b5e96194d,09289c6bdb638010ec8adf6b5e961970"/>
+    <sys_choice field="offer" table="var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>offer</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89289c6bdb638010ec8adf6b5e96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="publisher_name" table="var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>publisher_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:22:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0289c6bdb638010ec8adf6b5e96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:25</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="skus" table="var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>skus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_a78e32e9dbdf0450757af1471d961960</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 09:22:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>09289c6bdb638010ec8adf6b5e961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-20 09:22:26</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a78e32e9dbdf0450757af1471d961960^sys_idNOT IN60408741db2b8810ec8adf6b5e96197b,849e72e9dbdf0450757af1471d96191a,8c9e72e9dbdf0450757af1471d961913"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
@@ -8247,9 +8587,9 @@
         <sys_id>60408741db2b8810ec8adf6b5e96197b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 03:12:07</sys_updated_on>
@@ -8270,9 +8610,9 @@
         <sys_id>849e72e9dbdf0450757af1471d96191a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>
@@ -8293,9 +8633,9 @@
         <sys_id>8c9e72e9dbdf0450757af1471d961913</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-02 06:05:59</sys_updated_on>

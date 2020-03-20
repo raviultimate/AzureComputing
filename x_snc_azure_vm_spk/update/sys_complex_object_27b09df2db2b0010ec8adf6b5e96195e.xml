@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD23b09df2b22b0010f5037c386199fb5e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FD23b09df2b22b0010f5037c386199fb5e":{},"FlowDesigner:FD23b09df2b22b0010f5037c386199fb5e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Tags\",\"mandatory\":\"false\",\"uiUniqueId\":\"7f8e95d0-c8db-4703-9d01-12ebd9f671dd\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD23b09df2b22b0010f5037c386199fb5e\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"5\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 05:34:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>27b09df2db2b0010ec8adf6b5e96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD23b09df2b22b0010f5037c386199fb5e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_27b09df2db2b0010ec8adf6b5e96195e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 05:34:16</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

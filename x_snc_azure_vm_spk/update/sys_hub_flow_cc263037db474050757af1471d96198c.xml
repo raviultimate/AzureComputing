@@ -11,7 +11,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>test12</internal_name>
-        <label_cache>[{"name":"bb7efde6-9e24-4e9b-9b66-7b86e35d785f.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"bb7efde6-9e24-4e9b-9b66-7b86e35d785f.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"27bf635c-05ab-4387-9a7e-a36dcfa85af4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"27bf635c-05ab-4387-9a7e-a36dcfa85af4.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"553a7560-c557-4d55-96c5-e809fff089db.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"553a7560-c557-4d55-96c5-e809fff089db.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"bb592ff2-6700-49cc-92b1-78038c921273.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"bb592ff2-6700-49cc-92b1-78038c921273.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}}]</label_cache>
+        <label_cache>[{"name":"af13f969-8009-48d2-b06e-b862df17b452.output","label":"2➛Virtual Machines","reference_display":"Virtual Machines","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4ff05b4c-00fb-4ee8-a518-7a7f1d461c57"}},{"name":"af13f969-8009-48d2-b06e-b862df17b452.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8f3a30b3-d96b-4b0f-a3e8-25018126d93a"}},{"name":"af13f969-8009-48d2-b06e-b862df17b452.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5d34d0f9-fe8c-497e-acc1-e5d961d20c8c"}},{"name":"c13987ae-e806-4b79-ba66-dee2e388871d.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"796938d6-93d4-4854-9dc0-89d6de676d4f"}},{"name":"c13987ae-e806-4b79-ba66-dee2e388871d.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0a1a1b6f-2950-4c31-8b6d-975d5d8028c3"}},{"name":"7ff4ba1b-2c7b-444d-bc0f-595d520fa77c.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"7ff4ba1b-2c7b-444d-bc0f-595d520fa77c.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"bb7efde6-9e24-4e9b-9b66-7b86e35d785f.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"bb7efde6-9e24-4e9b-9b66-7b86e35d785f.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"27bf635c-05ab-4387-9a7e-a36dcfa85af4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"27bf635c-05ab-4387-9a7e-a36dcfa85af4.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"553a7560-c557-4d55-96c5-e809fff089db.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"553a7560-c557-4d55-96c5-e809fff089db.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"bb592ff2-6700-49cc-92b1-78038c921273.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"6cc8044a-2811-4ae3-97ca-fa5f1d6383cb"}},{"name":"bb592ff2-6700-49cc-92b1-78038c921273.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9051ae6c-3d94-4ead-870f-49d49f2408a8"}},{"name":"f9a7d210-db68-4b4f-b501-29108bafb9b0.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"0a1a1b6f-2950-4c31-8b6d-975d5d8028c3"}},{"name":"f9a7d210-db68-4b4f-b501-29108bafb9b0.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"796938d6-93d4-4854-9dc0-89d6de676d4f"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>Create VM</name>
@@ -28,23 +28,48 @@
         <sys_created_on>2020-02-25 09:40:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>cc263037db474050757af1471d96198c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Create VM</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_flow_cc263037db474050757af1471d96198c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cc263037db474050757af1471d96198c"/>
     <sys_variable_value action="delete_multiple" query="document_key=cc263037db474050757af1471d96198c"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=cc263037db474050757af1471d96198c^sys_idNOT INff2c6d10db2f0810ec8adf6b5e961916"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=cc263037db474050757af1471d96198c^sys_idNOT IN13497f4adb6f0c10ec8adf6b5e961949,55e7ff0adb6f0c10ec8adf6b5e9619d1,55e7ff0adb6f0c10ec8adf6b5e9619e0"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Create Virtual Machine from Market Place">4d3aa380db0b8810757af1471d961979</action_type>
+        <action_type display_value="Get Run-Time State of VM">06fb7229dbdf0450757af1471d961953</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create VM">cc263037db474050757af1471d96198c</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:55:17</sys_created_on>
+        <sys_id>13497f4adb6f0c10ec8adf6b5e961949</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>f9a7d210-db68-4b4f-b501-29108bafb9b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=13497f4adb6f0c10ec8adf6b5e961949"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Virtual Machine">a5b1da0edb6b0c10ec8adf6b5e961933</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot/>
@@ -54,102 +79,253 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>ff2c6d10db2f0810ec8adf6b5e961916</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619d1</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
-        <ui_id>bb7efde6-9e24-4e9b-9b66-7b86e35d785f</ui_id>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>7ff4ba1b-2c7b-444d-bc0f-595d520fa77c</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=ff2c6d10db2f0810ec8adf6b5e961916"/>
+    <sys_variable_value action="delete_multiple" query="document_key=55e7ff0adb6f0c10ec8adf6b5e9619d1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>732c6d10db2f0810ec8adf6b5e96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>centralus</value>
-        <variable display_value="">8c45400edb5b4450757af1471d961974</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>3</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>b32c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>myVMs</value>
-        <variable display_value="">08ff010cdb5f4050757af1471d9619ea</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
         <order>5</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>bb2c6d10db2f0810ec8adf6b5e96191c</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>15e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenoVM"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"true"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD692b61108f2f081044ccfc8331ff23d6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">513751c8dba30810ec8adf6b5e9619e4</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>MicrosoftWindowsServer</value>
+        <variable display_value="">31b1da0edb6b0c10ec8adf6b5e96195c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>7</order>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>8</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>f72c6d10db2f0810ec8adf6b5e96191c</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>19e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":"myOS"}},"osType":{"$cv":{"$c":"java.lang.String","$v":"Windows"}},"caching":{"$cv":{"$c":"java.lang.String","$v":"ReadWrite"}},"createOption":{"$cv":{"$c":"java.lang.String","$v":"FromImage"}},"diskSizeGB":{"$cv":{"$c":"java.lang.String","$v":"127"}}},"complexObjectSchema":{"FlowDesigner:FDe12b6110ed2f0810133dbd50f812c5da":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"osType":"String","osType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"OsType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"caching":"String","caching.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Caching\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"createOption":"String","createOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CreateOption\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"diskSizeGB":"Integer","diskSizeGB.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Disk SizeGB\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe12b6110ed2f0810133dbd50f812c5da.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe12b6110ed2f0810133dbd50f812c5da\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OsDisk\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"65000\",\"uiUniqueId\":\"1ebeb7b7-5039-49da-a129-8badb506d545\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">5dabdd4cdba30810ec8adf6b5e961939</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>latest</value>
+        <variable display_value="">31b1da0edb6b0c10ec8adf6b5e961975</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>2</order>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>14</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>fb2c6d10db2f0810ec8adf6b5e96191b</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>1de7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>firstResource</value>
-        <variable display_value="">f7ef010cdb5f4050757af1471d9619e4</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>/subscriptions/dd6fa666-2687-4ada-86bd-34e027ec339a/resourceGroups/firstResource/providers/Microsoft.Network/networkInterfaces/myvm881</value>
+        <variable display_value="">c06e5646dbab0c10ec8adf6b5e961995</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>ff2c6d10db2f0810ec8adf6b5e96191a</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>51e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
         <value>dd6fa666-2687-4ada-86bd-34e027ec339a</value>
-        <variable display_value="">4d3aa380db0b8810757af1471d96197a</variable>
+        <variable display_value="">e1b1da0edb6b0c10ec8adf6b5e961944</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>{"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":"servicnowOS"}},"osType":{"$cv":{"$c":"java.lang.String","$v":""}},"caching":{"$cv":{"$c":"java.lang.String","$v":"ReadWrite"}},"createOption":{"$cv":{"$c":"java.lang.String","$v":"FromImage"}},"diskSizeGB":{"$cv":{"$c":"java.lang.String","$v":"127"}}},"complexObjectSchema":{"FlowDesigner:FD2d76330a946f0c10a4cc81a21336658b":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"osType":"String","osType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"OsType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"caching":"String","caching.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Caching\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"createOption":"String","createOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CreateOption\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"diskSizeGB":"Integer","diskSizeGB.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Disk SizeGB\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"}},"FlowDesigner:FD2d76330a946f0c10a4cc81a21336658b.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2d76330a946f0c10a4cc81a21336658b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OsDisk\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"65000\",\"uiUniqueId\":\"1ebeb7b7-5039-49da-a129-8badb506d545\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
+        <variable display_value="">8ab1da0edb6b0c10ec8adf6b5e961991</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>59e7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>testvirtualmachine</value>
+        <variable display_value="">b1b1da0edb6b0c10ec8adf6b5e961950</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>5de7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenowAdmin"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"false"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FDa176330ad26f0c1078edc74e4711198a":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FDa176330ad26f0c1078edc74e4711198a.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa176330ad26f0c1078edc74e4711198a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
+        <variable display_value="">8eb1da0edb6b0c10ec8adf6b5e96198b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>91e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>Standard_D1_v2</value>
+        <variable display_value="">fdb1da0edb6b0c10ec8adf6b5e961983</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>99e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>2016-Datacenter</value>
+        <variable display_value="">f1b1da0edb6b0c10ec8adf6b5e96196c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>9de7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>Standard_LRS</value>
+        <variable display_value="">86b1da0edb6b0c10ec8adf6b5e961997</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d5e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>centralus</value>
+        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961955</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d9e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>WindowsServer</value>
+        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961963</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>dde7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>firstResource</value>
+        <variable display_value="">e5b1da0edb6b0c10ec8adf6b5e96194a</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="List Instances by ResourceGroup">7c7c3a29dbdf0450757af1471d9619e4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create VM">cc263037db474050757af1471d96198c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>af13f969-8009-48d2-b06e-b862df17b452</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=55e7ff0adb6f0c10ec8adf6b5e9619e0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619e0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>11e7ff0adb6f0c10ec8adf6b5e9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>dd6fa666-2687-4ada-86bd-34e027ec339a</value>
+        <variable display_value="">307c3a29dbdf0450757af1471d9619e6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619e0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d1e7ff0adb6f0c10ec8adf6b5e9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>firstResource</value>
+        <variable display_value="">017c3a29dbdf0450757af1471d9619ed</variable>
     </sys_variable_value>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=cc263037db474050757af1471d96198c^sys_idNOT INcb20e118dbeb0810ec8adf6b5e961950"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
@@ -162,14 +338,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 12:16:53</sys_created_on>
         <sys_id>cb20e118dbeb0810ec8adf6b5e961950</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -202,15 +378,40 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-02-25 09:40:31</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_action_instance action="delete_multiple" query="flow=cc263037db474050757af1471d96198c^sys_idNOT INff2c6d10db2f0810ec8adf6b5e961916"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=cc263037db474050757af1471d96198c^sys_idNOT IN13497f4adb6f0c10ec8adf6b5e961949,55e7ff0adb6f0c10ec8adf6b5e9619d1,55e7ff0adb6f0c10ec8adf6b5e9619e0"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Create Virtual Machine from Market Place">4d3aa380db0b8810757af1471d961979</action_type>
+        <action_type display_value="Get Run-Time State of VM">06fb7229dbdf0450757af1471d961953</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create VM">cc263037db474050757af1471d96198c</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:55:17</sys_created_on>
+        <sys_id>13497f4adb6f0c10ec8adf6b5e961949</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>f9a7d210-db68-4b4f-b501-29108bafb9b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=13497f4adb6f0c10ec8adf6b5e961949"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Virtual Machine">a5b1da0edb6b0c10ec8adf6b5e961933</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot/>
@@ -220,101 +421,252 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>ff2c6d10db2f0810ec8adf6b5e961916</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619d1</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:10:03</sys_updated_on>
-        <ui_id>bb7efde6-9e24-4e9b-9b66-7b86e35d785f</ui_id>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>7ff4ba1b-2c7b-444d-bc0f-595d520fa77c</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=ff2c6d10db2f0810ec8adf6b5e961916"/>
+    <sys_variable_value action="delete_multiple" query="document_key=55e7ff0adb6f0c10ec8adf6b5e9619d1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>732c6d10db2f0810ec8adf6b5e96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>centralus</value>
-        <variable display_value="">8c45400edb5b4450757af1471d961974</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>3</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>b32c6d10db2f0810ec8adf6b5e96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>myVMs</value>
-        <variable display_value="">08ff010cdb5f4050757af1471d9619ea</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
         <order>5</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>bb2c6d10db2f0810ec8adf6b5e96191c</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>15e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenoVM"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"true"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FD692b61108f2f081044ccfc8331ff23d6.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD692b61108f2f081044ccfc8331ff23d6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">513751c8dba30810ec8adf6b5e9619e4</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>MicrosoftWindowsServer</value>
+        <variable display_value="">31b1da0edb6b0c10ec8adf6b5e96195c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>7</order>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>8</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>f72c6d10db2f0810ec8adf6b5e96191c</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>19e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>{"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":"myOS"}},"osType":{"$cv":{"$c":"java.lang.String","$v":"Windows"}},"caching":{"$cv":{"$c":"java.lang.String","$v":"ReadWrite"}},"createOption":{"$cv":{"$c":"java.lang.String","$v":"FromImage"}},"diskSizeGB":{"$cv":{"$c":"java.lang.String","$v":"127"}}},"complexObjectSchema":{"FlowDesigner:FDe12b6110ed2f0810133dbd50f812c5da":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"osType":"String","osType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"OsType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"caching":"String","caching.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Caching\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"createOption":"String","createOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CreateOption\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"diskSizeGB":"Integer","diskSizeGB.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Disk SizeGB\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe12b6110ed2f0810133dbd50f812c5da.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe12b6110ed2f0810133dbd50f812c5da\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OsDisk\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"65000\",\"uiUniqueId\":\"1ebeb7b7-5039-49da-a129-8badb506d545\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
-        <variable display_value="">5dabdd4cdba30810ec8adf6b5e961939</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>latest</value>
+        <variable display_value="">31b1da0edb6b0c10ec8adf6b5e961975</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
-        <order>2</order>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>14</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>fb2c6d10db2f0810ec8adf6b5e96191b</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>1de7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
-        <value>firstResource</value>
-        <variable display_value="">f7ef010cdb5f4050757af1471d9619e4</variable>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>/subscriptions/dd6fa666-2687-4ada-86bd-34e027ec339a/resourceGroups/firstResource/providers/Microsoft.Network/networkInterfaces/myvm881</value>
+        <variable display_value="">c06e5646dbab0c10ec8adf6b5e961995</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>ff2c6d10db2f0810ec8adf6b5e961916</document_key>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-10 13:09:22</sys_created_on>
-        <sys_id>ff2c6d10db2f0810ec8adf6b5e96191a</sys_id>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>51e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 13:09:22</sys_updated_on>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
         <value>dd6fa666-2687-4ada-86bd-34e027ec339a</value>
-        <variable display_value="">4d3aa380db0b8810757af1471d96197a</variable>
+        <variable display_value="">e1b1da0edb6b0c10ec8adf6b5e961944</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>{"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":"servicnowOS"}},"osType":{"$cv":{"$c":"java.lang.String","$v":""}},"caching":{"$cv":{"$c":"java.lang.String","$v":"ReadWrite"}},"createOption":{"$cv":{"$c":"java.lang.String","$v":"FromImage"}},"diskSizeGB":{"$cv":{"$c":"java.lang.String","$v":"127"}}},"complexObjectSchema":{"FlowDesigner:FD2d76330a946f0c10a4cc81a21336658b":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"osType":"String","osType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"OsType\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"caching":"String","caching.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Caching\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"createOption":"String","createOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CreateOption\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"diskSizeGB":"Integer","diskSizeGB.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Disk SizeGB\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"}},"FlowDesigner:FD2d76330a946f0c10a4cc81a21336658b.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2d76330a946f0c10a4cc81a21336658b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OsDisk\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"65000\",\"uiUniqueId\":\"1ebeb7b7-5039-49da-a129-8badb506d545\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
+        <variable display_value="">8ab1da0edb6b0c10ec8adf6b5e961991</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>59e7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>testvirtualmachine</value>
+        <variable display_value="">b1b1da0edb6b0c10ec8adf6b5e961950</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>5de7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>{"complexObject":{"adminUsername":{"$cv":{"$c":"java.lang.String","$v":"servicenowAdmin"}},"allowExtensionOperations":{"$cv":{"$c":"java.lang.String","$v":"false"}},"computerName":{"$cv":{"$c":"java.lang.String","$v":"servicenowVM"}},"adminPassword":{"$cv":{"$c":"java.lang.String","$v":"Servicenow@123"}}},"complexObjectSchema":{"FlowDesigner:FDa176330ad26f0c1078edc74e4711198a":{"adminUsername":"String","adminUsername.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Username\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"allowExtensionOperations":"Boolean","allowExtensionOperations.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"AllowExtension Operations\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"computerName":"String","computerName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Computer Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"adminPassword":"String","adminPassword.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Admin Password\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FDa176330ad26f0c1078edc74e4711198a.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa176330ad26f0c1078edc74e4711198a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"OS Profile\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"8000\",\"uiUniqueId\":\"18b7cf4c-925d-42bf-a0a6-550b94703b0c\"}"}},"serializationFormat":"JSON","version":"1.0"}</value>
+        <variable display_value="">8eb1da0edb6b0c10ec8adf6b5e96198b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>91e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>Standard_D1_v2</value>
+        <variable display_value="">fdb1da0edb6b0c10ec8adf6b5e961983</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>99e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>2016-Datacenter</value>
+        <variable display_value="">f1b1da0edb6b0c10ec8adf6b5e96196c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>9de7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>Standard_LRS</value>
+        <variable display_value="">86b1da0edb6b0c10ec8adf6b5e961997</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d5e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>centralus</value>
+        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961955</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d9e7ff0adb6f0c10ec8adf6b5e9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>WindowsServer</value>
+        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961963</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>dde7ff0adb6f0c10ec8adf6b5e9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>firstResource</value>
+        <variable display_value="">e5b1da0edb6b0c10ec8adf6b5e96194a</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="List Instances by ResourceGroup">7c7c3a29dbdf0450757af1471d9619e4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create VM">cc263037db474050757af1471d96198c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>55e7ff0adb6f0c10ec8adf6b5e9619e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:55:17</sys_updated_on>
+        <ui_id>af13f969-8009-48d2-b06e-b862df17b452</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=55e7ff0adb6f0c10ec8adf6b5e9619e0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619e0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>11e7ff0adb6f0c10ec8adf6b5e9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>dd6fa666-2687-4ada-86bd-34e027ec339a</value>
+        <variable display_value="">307c3a29dbdf0450757af1471d9619e6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619e0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
+        <sys_id>d1e7ff0adb6f0c10ec8adf6b5e9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
+        <value>firstResource</value>
+        <variable display_value="">017c3a29dbdf0450757af1471d9619ed</variable>
     </sys_variable_value>
 </record_update>

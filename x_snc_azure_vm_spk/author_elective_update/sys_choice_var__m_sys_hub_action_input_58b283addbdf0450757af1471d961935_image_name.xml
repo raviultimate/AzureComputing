@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="image_name" table="var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:27:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b84f2a3edbeb0010ec8adf6b5e9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:27:15</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstImagefromServicenow</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:46:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcc37afedbeb0010ec8adf6b5e96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:46:54</sys_updated_on>
+            <value>firstImagefromServicenow</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>imagenew</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:46:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78c37afedbeb0010ec8adf6b5e96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:46:54</sys_updated_on>
+            <value>imagenew</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>myFirstImage</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:46:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>34c37afedbeb0010ec8adf6b5e961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:46:55</sys_updated_on>
+            <value>myFirstImage</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NoDiskVM_Image</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:46:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fcc37afedbeb0010ec8adf6b5e961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:46:55</sys_updated_on>
+            <value>NoDiskVM_Image</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>image_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>snowImage</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:46:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8c37afedbeb0010ec8adf6b5e961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:46:55</sys_updated_on>
+            <value>snowImage</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>image_name</element>
+            <name>var__m_sys_hub_action_input_58b283addbdf0450757af1471d961935</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-18 12:27:15</sys_created_on>
+            <sys_id>f04f2a3edbeb0010ec8adf6b5e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-18 12:27:15</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

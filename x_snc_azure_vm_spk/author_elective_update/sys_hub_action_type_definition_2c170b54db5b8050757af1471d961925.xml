@@ -40,7 +40,7 @@
     <sys_variable_value action="DELETE" query="document_key=2c170b54db5b8050757af1471d961925"/>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</application>
+        <application display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</application>
         <file_path/>
         <instance_id>58151fc6db314454387021c405961954</instance_id>
         <instance_name>empravispokes</instance_name>
@@ -73,10 +73,10 @@
         <sys_metadata>2c170b54db5b8050757af1471d961925</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Get Image Information</sys_name>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_scope_delete display_value="">8a5e4ce255dd4ef996e970a02fe3c7b9</sys_scope_delete>
         <sys_update_name>sys_hub_action_type_definition_2c170b54db5b8050757af1471d961925</sys_update_name>
         <sys_update_version display_value="sys_hub_action_type_definition_2c170b54db5b8050757af1471d961925">a0170b54db5b8050757af1471d961929</sys_update_version>

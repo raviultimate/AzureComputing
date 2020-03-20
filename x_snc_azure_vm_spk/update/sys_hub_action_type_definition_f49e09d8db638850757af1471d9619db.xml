@@ -12,10 +12,10 @@
         <description/>
         <ih_action>true</ih_action>
         <internal_name>list_all_available_sizes_by_region</internal_name>
-        <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].status_code}}","label":"step➛List all available sizes by region➛Status Code","type":"step","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].response_body}}","label":"step➛List all available sizes by region➛Response Body","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].variable}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].status}}","label":"step➛Post Processing ➛Status","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].error_message}}","label":"step➛Post Processing ➛Error Message","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiable_sizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>9e4e8f89db2b8810ec8adf6b5e9619c4</latest_snapshot>
+        <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].status_code}}","label":"step➛List all available sizes by region➛Status Code","type":"step","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].response_body}}","label":"step➛List all available sizes by region➛Response Body","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].variable}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].status}}","label":"step➛Post Processing ➛Status","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].error_message}}","label":"step➛Post Processing ➛Error Message","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}","label":"step➛Post Processing ➛Size List","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiable_sizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>6cc08c6bdb238010ec8adf6b5e961983</latest_snapshot>
         <master_snapshot>a3e2999cdb638850757af1471d961999</master_snapshot>
-        <name>List Available sizes by location</name>
+        <name>List Available Sizes By Location</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -25,15 +25,15 @@
         <sys_created_on>2020-03-10 11:00:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>f49e09d8db638850757af1471d9619db</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>List Available sizes by location</sys_name>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>List Available Sizes By Location</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_f49e09d8db638850757af1471d9619db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-20 07:40:20</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -58,9 +58,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:12</sys_created_on>
         <sys_id>873e4f89db2b8810ec8adf6b5e961911</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:27</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</table>
+        <value>{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>size_details</field>
+        <id>f49e09d8db638850757af1471d9619db</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:27</sys_created_on>
+        <sys_id>1038567edbab0010ec8adf6b5e961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:12</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:27</sys_updated_on>
         <table>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</table>
         <value>{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}</value>
     </sys_element_mapping>
@@ -78,7 +90,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=f49e09d8db638850757af1471d9619db^sys_idNOT IN5690dd1cdb638850757af1471d9619f5,c290dd1cdb638850757af1471d9619e2,d290115cdb638850757af1471d96190e"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6</cid>
         <extended_inputs/>
         <extended_outputs/>
@@ -98,7 +110,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -366,7 +378,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:18:28</sys_updated_on>
@@ -382,7 +394,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>bcebb578-f31a-4904-99ef-c5bc313a04d8</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -398,14 +410,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:49</sys_created_on>
         <sys_id>c290dd1cdb638850757af1471d9619e2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:25</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c290dd1cdb638850757af1471d9619e2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -430,12 +442,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:50</sys_created_on>
         <sys_id>da90dd1cdb638850757af1471d9619f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-// ... code ...&#13;
-})(inputs, outputs);&#13;
+        <sys_updated_on>2020-03-18 10:46:25</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs);
+})(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -555,7 +567,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -636,7 +648,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
@@ -652,7 +664,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>8f8af42e-67ab-4090-a998-19d462b71cd6</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -668,14 +680,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:50</sys_created_on>
         <sys_id>d290115cdb638850757af1471d96190e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d290115cdb638850757af1471d96190e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -686,27 +698,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:51</sys_created_on>
         <sys_id>6690115cdb638850757af1471d96192c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-
-  new azureComputeUtils().postErrorHandling(inputs, outputs);
-  var responseBody = JSON.parse(inputs['responseBody']);
-  var sizeList =[];
-  var data =[];
-  var sizes = responseBody.value;
-  sizes.forEach(function(property){
-    sizeList.push({
-      label:property['name'],
-      name:property['name']
-
+  var successCodes = ['200', '202', '201'];
+  var arrayUtil = new global.ArrayUtil();
+  if (arrayUtil.contains(successCodes, inputs.status)) {
+    var responseBody = JSON.parse(inputs['responseBody']);
+    var sizeList =[];
+    var data =[];
+    var availableSizes =[];
+    var sizes = responseBody.value;
+    sizes.forEach(function(property){
+      sizeList.push({
+        label:property['name'],
+        name:property['name']
+      });
+      availableSizes.push(property);
     });
-  });
-  
-  outputs.avaiablesizes = {data:sizeList};
+    outputs.status = 'Success';
+    outputs.avaiablesizes = {'Details':availableSizes};
+    outputs.sizelist = {data:sizeList};
+  } else {
+    new AzureComputeUtils().postErrorHandling(inputs, outputs);
+  }
 })(inputs, outputs);
+  
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -840,7 +859,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -921,7 +940,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -936,7 +955,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=d290115cdb638850757af1471d96190e^sys_idNOT IN1a90115cdb638850757af1471d961923,1e90115cdb638850757af1471d96191a,4f3e0f89db2b8810ec8adf6b5e9619f8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d290115cdb638850757af1471d96190e^sys_idNOT IN1a90115cdb638850757af1471d961923,1e90115cdb638850757af1471d96191a,4038567edbab0010ec8adf6b5e961915,4f3e0f89db2b8810ec8adf6b5e9619f8"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1003,7 +1022,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -1084,10 +1103,91 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=1c054fd3-4a93-4046-9857-4e140b2d2096</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sizelist</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size List</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Post Processing ">d290115cdb638850757af1471d96190e</model>
+        <model_id>d290115cdb638850757af1471d96190e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d290115cdb638850757af1471d96190e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:26</sys_created_on>
+        <sys_id>4038567edbab0010ec8adf6b5e961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1165,7 +1265,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
@@ -1220,7 +1320,7 @@
         <label>Subscription ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</model>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
         <model_id>f49e09d8db638850757af1471d9619db</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f49e09d8db638850757af1471d9619db</name>
@@ -1247,7 +1347,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
@@ -1301,7 +1401,7 @@
         <label>Location</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</model>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
         <model_id>f49e09d8db638850757af1471d9619db</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f49e09d8db638850757af1471d9619db</name>
@@ -1328,7 +1428,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
@@ -1343,7 +1443,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=f49e09d8db638850757af1471d9619db^sys_idNOT IN2e90115cdb638850757af1471d96192f,6e90115cdb638850757af1471d961938,c33e4f89db2b8810ec8adf6b5e961909"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f49e09d8db638850757af1471d9619db^sys_idNOT IN2e90115cdb638850757af1471d96192f,6e90115cdb638850757af1471d961938,c33e4f89db2b8810ec8adf6b5e961909,d838567edbab0010ec8adf6b5e96192a"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1385,7 +1485,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</model>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
         <model_id>f49e09d8db638850757af1471d9619db</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
@@ -1412,7 +1512,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -1468,7 +1568,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</model>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
         <model_id>f49e09d8db638850757af1471d9619db</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
@@ -1495,7 +1595,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -1514,7 +1614,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=0b405ad4-ac3b-4aaf-8ab0-5f3c77ec6fb0</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=9b1dd742-44bf-4f3f-a267-21d02163fb60</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1548,10 +1648,10 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>Available Sizes</label>
+        <label>Size List</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</model>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
         <model_id>f49e09d8db638850757af1471d9619db</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
@@ -1574,14 +1674,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:12</sys_created_on>
         <sys_id>c33e4f89db2b8810ec8adf6b5e961909</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=5046095c-b979-43b0-897a-c4e3890a1768</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>size_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size Details</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</model>
+        <model_id>f49e09d8db638850757af1471d9619db</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:26</sys_created_on>
+        <sys_id>d838567edbab0010ec8adf6b5e96192a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:12</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1595,7 +1778,7 @@
     </sys_hub_action_output>
     <sys_hub_step_instance action="delete_multiple" query="action=f49e09d8db638850757af1471d9619db^sys_idNOT IN5690dd1cdb638850757af1471d9619f5,c290dd1cdb638850757af1471d9619e2,d290115cdb638850757af1471d96190e"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6</cid>
         <extended_inputs/>
         <extended_outputs/>
@@ -1615,7 +1798,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -1883,7 +2066,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:18:28</sys_updated_on>
@@ -1899,7 +2082,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>bcebb578-f31a-4904-99ef-c5bc313a04d8</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -1915,14 +2098,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:49</sys_created_on>
         <sys_id>c290dd1cdb638850757af1471d9619e2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:25</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c290dd1cdb638850757af1471d9619e2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1947,12 +2130,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:50</sys_created_on>
         <sys_id>da90dd1cdb638850757af1471d9619f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-// ... code ...&#13;
-})(inputs, outputs);&#13;
+        <sys_updated_on>2020-03-18 10:46:25</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs);
+})(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -2072,7 +2255,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -2153,7 +2336,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
@@ -2169,7 +2352,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action>
+        <action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action>
         <cid>8f8af42e-67ab-4090-a998-19d462b71cd6</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -2185,14 +2368,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:50</sys_created_on>
         <sys_id>d290115cdb638850757af1471d96190e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d290115cdb638850757af1471d96190e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2203,27 +2386,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:08:51</sys_created_on>
         <sys_id>6690115cdb638850757af1471d96192c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-
-  new azureComputeUtils().postErrorHandling(inputs, outputs);
-  var responseBody = JSON.parse(inputs['responseBody']);
-  var sizeList =[];
-  var data =[];
-  var sizes = responseBody.value;
-  sizes.forEach(function(property){
-    sizeList.push({
-      label:property['name'],
-      name:property['name']
-
+  var successCodes = ['200', '202', '201'];
+  var arrayUtil = new global.ArrayUtil();
+  if (arrayUtil.contains(successCodes, inputs.status)) {
+    var responseBody = JSON.parse(inputs['responseBody']);
+    var sizeList =[];
+    var data =[];
+    var availableSizes =[];
+    var sizes = responseBody.value;
+    sizes.forEach(function(property){
+      sizeList.push({
+        label:property['name'],
+        name:property['name']
+      });
+      availableSizes.push(property);
     });
-  });
-  
-  outputs.avaiablesizes = {data:sizeList};
+    outputs.status = 'Success';
+    outputs.avaiablesizes = {'Details':availableSizes};
+    outputs.sizelist = {data:sizeList};
+  } else {
+    new AzureComputeUtils().postErrorHandling(inputs, outputs);
+  }
 })(inputs, outputs);
+  
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -2357,7 +2547,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -2438,7 +2628,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
@@ -2453,7 +2643,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=d290115cdb638850757af1471d96190e^sys_idNOT IN1a90115cdb638850757af1471d961923,1e90115cdb638850757af1471d96191a,4f3e0f89db2b8810ec8adf6b5e9619f8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d290115cdb638850757af1471d96190e^sys_idNOT IN1a90115cdb638850757af1471d961923,1e90115cdb638850757af1471d96191a,4038567edbab0010ec8adf6b5e961915,4f3e0f89db2b8810ec8adf6b5e9619f8"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2520,7 +2710,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -2601,10 +2791,91 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=1c054fd3-4a93-4046-9857-4e140b2d2096</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sizelist</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size List</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Post Processing ">d290115cdb638850757af1471d96190e</model>
+        <model_id>d290115cdb638850757af1471d96190e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d290115cdb638850757af1471d96190e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:26</sys_created_on>
+        <sys_id>4038567edbab0010ec8adf6b5e961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2682,7 +2953,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 04:13:11</sys_updated_on>
@@ -2712,9 +2983,9 @@
         <sys_id>0a90dd1cdb638850757af1471d9619cd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
@@ -2735,21 +3006,21 @@
         <sys_id>0a90dd1cdb638850757af1471d9619d3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:49</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db^sys_idNOT IN033e4f89db2b8810ec8adf6b5e96190e,aa90115cdb638850757af1471d961937,ea90115cdb638850757af1471d96193d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db^sys_idNOT IN033e4f89db2b8810ec8adf6b5e96190e,1038567edbab0010ec8adf6b5e96192f,aa90115cdb638850757af1471d961937,ea90115cdb638850757af1471d96193d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
         <help/>
         <hint/>
-        <label>Available Sizes</label>
+        <label>Size List</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
         <plural/>
@@ -2757,14 +3028,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:12</sys_created_on>
         <sys_id>033e4f89db2b8810ec8adf6b5e96190e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:12</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>size_details</element>
+        <help/>
+        <hint/>
+        <label>Size Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f49e09d8db638850757af1471d9619db</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:27</sys_created_on>
+        <sys_id>1038567edbab0010ec8adf6b5e96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:27</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2782,9 +3076,9 @@
         <sys_id>aa90115cdb638850757af1471d961937</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -2805,9 +3099,9 @@
         <sys_id>ea90115cdb638850757af1471d96193d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:08:51</sys_updated_on>
@@ -2876,23 +3170,23 @@
     </sys_choice>
     <sys_hub_action_plan action="delete_multiple" query="action_id=f49e09d8db638850757af1471d9619db^sys_idNOT IN7cf2d99cdb638850757af1471d9619d8"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</action_id>
+        <action_id display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"7cf2d99cdb638850757af1471d9619d8","name":"plan"}}</plan>
-        <snapshot>9e4e8f89db2b8810ec8adf6b5e9619c4</snapshot>
+        <snapshot>6cc08c6bdb238010ec8adf6b5e961983</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7cf2d99cdb638850757af1471d9619d8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:32</sys_updated_on>
+        <sys_updated_on>2020-03-20 07:40:23</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2905,27 +3199,27 @@
         <copied_from_name/>
         <description/>
         <internal_name>list_all_available_sizes_by_region</internal_name>
-        <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].status_code}}","label":"step➛List all available sizes by region➛Status Code","type":"step","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].response_body}}","label":"step➛List all available sizes by region➛Response Body","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].variable}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].status}}","label":"step➛Post Processing ➛Status","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].error_message}}","label":"step➛Post Processing ➛Error Message","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiable_sizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].status_code}}","label":"step➛List all available sizes by region➛Status Code","type":"step","ref":""},{"name":"{{step[2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6].response_body}}","label":"step➛List all available sizes by region➛Response Body","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].variable}}","label":"step➛Post Processing ➛variable","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].status}}","label":"step➛Post Processing ➛Status","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].error_message}}","label":"step➛Post Processing ➛Error Message","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}","label":"step➛Post Processing ➛Size List","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiable_sizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}","label":"step➛Post Processing ➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
         <master>true</master>
-        <name>List Available sizes by location</name>
+        <name>List Available Sizes By Location</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="List Available sizes by location">f49e09d8db638850757af1471d9619db</parent_action>
+        <parent_action display_value="List Available Sizes By Location">f49e09d8db638850757af1471d9619db</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a3e2999cdb638850757af1471d961999</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:27</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:39</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2950,9 +3244,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:29</sys_created_on>
         <sys_id>9f4ecf89db2b8810ec8adf6b5e9619b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</table>
+        <value>{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].sizelist}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>size_details</field>
+        <id>a3e2999cdb638850757af1471d961999</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:40</sys_created_on>
+        <sys_id>ab38d67edbab0010ec8adf6b5e9619ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
         <table>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</table>
         <value>{{step[8f8af42e-67ab-4090-a998-19d462b71cd6].avaiablesizes}}</value>
     </sys_element_mapping>
@@ -2970,7 +3276,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=a3e2999cdb638850757af1471d961999^sys_idNOT INb7e2999cdb638850757af1471d9619f0,b7e2d99cdb638850757af1471d961908,e3e2999cdb638850757af1471d9619b5"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6</cid>
         <extended_inputs/>
         <extended_outputs/>
@@ -2990,7 +3296,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -3258,7 +3564,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -3274,7 +3580,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>8f8af42e-67ab-4090-a998-19d462b71cd6</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -3290,14 +3596,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:03</sys_created_on>
         <sys_id>b7e2d99cdb638850757af1471d961908</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7e2d99cdb638850757af1471d961908"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3308,27 +3614,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:03</sys_created_on>
         <sys_id>80f2d99cdb638850757af1471d96192b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-
-  new azureComputeUtils().postErrorHandling(inputs, outputs);
-  var responseBody = JSON.parse(inputs['responseBody']);
-  var sizeList =[];
-  var data =[];
-  var sizes = responseBody.value;
-  sizes.forEach(function(property){
-    sizeList.push({
-      label:property['name'],
-      name:property['name']
-
+  var successCodes = ['200', '202', '201'];
+  var arrayUtil = new global.ArrayUtil();
+  if (arrayUtil.contains(successCodes, inputs.status)) {
+    var responseBody = JSON.parse(inputs['responseBody']);
+    var sizeList =[];
+    var data =[];
+    var availableSizes =[];
+    var sizes = responseBody.value;
+    sizes.forEach(function(property){
+      sizeList.push({
+        label:property['name'],
+        name:property['name']
+      });
+      availableSizes.push(property);
     });
-  });
-  
-  outputs.avaiablesizes = {data:sizeList};
+    outputs.status = 'Success';
+    outputs.avaiablesizes = {'Details':availableSizes};
+    outputs.sizelist = {data:sizeList};
+  } else {
+    new AzureComputeUtils().postErrorHandling(inputs, outputs);
+  }
 })(inputs, outputs);
+  
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -3462,7 +3775,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -3543,7 +3856,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -3558,7 +3871,88 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=b7e2d99cdb638850757af1471d961908^sys_idNOT IN874ecf89db2b8810ec8adf6b5e961999,8cf2d99cdb638850757af1471d961921,bbe2d99cdb638850757af1471d961918"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b7e2d99cdb638850757af1471d961908^sys_idNOT IN2b38d67edbab0010ec8adf6b5e9619ad,874ecf89db2b8810ec8adf6b5e961999,8cf2d99cdb638850757af1471d961921,bbe2d99cdb638850757af1471d961918"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=1c054fd3-4a93-4046-9857-4e140b2d2096</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sizelist</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size List</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Post Processing ">b7e2d99cdb638850757af1471d961908</model>
+        <model_id>b7e2d99cdb638850757af1471d961908</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b7e2d99cdb638850757af1471d961908</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:40</sys_created_on>
+        <sys_id>2b38d67edbab0010ec8adf6b5e9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3625,7 +4019,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 04:13:28</sys_updated_on>
@@ -3706,7 +4100,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -3787,7 +4181,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -3803,7 +4197,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>bcebb578-f31a-4904-99ef-c5bc313a04d8</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -3819,14 +4213,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:02</sys_created_on>
         <sys_id>e3e2999cdb638850757af1471d9619b5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3e2999cdb638850757af1471d9619b5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3851,12 +4245,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:02</sys_created_on>
         <sys_id>fbe2999cdb638850757af1471d9619ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-// ... code ...&#13;
-})(inputs, outputs);&#13;
+        <sys_updated_on>2020-03-18 10:46:39</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs);
+})(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -3976,7 +4370,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4057,7 +4451,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4112,7 +4506,7 @@
         <label>Subscription ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</model>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
         <model_id>a3e2999cdb638850757af1471d961999</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a3e2999cdb638850757af1471d961999</name>
@@ -4139,7 +4533,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4193,7 +4587,7 @@
         <label>Location</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</model>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
         <model_id>a3e2999cdb638850757af1471d961999</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a3e2999cdb638850757af1471d961999</name>
@@ -4220,7 +4614,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4235,12 +4629,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=a3e2999cdb638850757af1471d961999^sys_idNOT IN1f4ecf89db2b8810ec8adf6b5e9619a9,88f2d99cdb638850757af1471d96192e,8cf2d99cdb638850757af1471d961937"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a3e2999cdb638850757af1471d961999^sys_idNOT IN1f4ecf89db2b8810ec8adf6b5e9619a9,2f38d67edbab0010ec8adf6b5e9619c2,88f2d99cdb638850757af1471d96192e,8cf2d99cdb638850757af1471d961937"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=0b405ad4-ac3b-4aaf-8ab0-5f3c77ec6fb0</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=9b1dd742-44bf-4f3f-a267-21d02163fb60</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4274,10 +4668,10 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>Available Sizes</label>
+        <label>Size List</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</model>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
         <model_id>a3e2999cdb638850757af1471d961999</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
@@ -4300,14 +4694,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:29</sys_created_on>
         <sys_id>1f4ecf89db2b8810ec8adf6b5e9619a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=5046095c-b979-43b0-897a-c4e3890a1768</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>size_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size Details</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
+        <model_id>a3e2999cdb638850757af1471d961999</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:40</sys_created_on>
+        <sys_id>2f38d67edbab0010ec8adf6b5e9619c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4360,7 +4837,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</model>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
         <model_id>a3e2999cdb638850757af1471d961999</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
@@ -4387,7 +4864,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -4443,7 +4920,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</model>
+        <model display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</model>
         <model_id>a3e2999cdb638850757af1471d961999</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
@@ -4470,7 +4947,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -4487,7 +4964,7 @@
     </sys_hub_action_output>
     <sys_hub_step_instance action="delete_multiple" query="action=a3e2999cdb638850757af1471d961999^sys_idNOT INb7e2999cdb638850757af1471d9619f0,b7e2d99cdb638850757af1471d961908,e3e2999cdb638850757af1471d9619b5"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>2b68b3e1-7c41-42e8-a3f2-1ba42342c8b6</cid>
         <extended_inputs/>
         <extended_outputs/>
@@ -4507,7 +4984,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4775,7 +5252,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -4791,7 +5268,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>8f8af42e-67ab-4090-a998-19d462b71cd6</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -4807,14 +5284,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:03</sys_created_on>
         <sys_id>b7e2d99cdb638850757af1471d961908</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7e2d99cdb638850757af1471d961908"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4825,27 +5302,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:03</sys_created_on>
         <sys_id>80f2d99cdb638850757af1471d96192b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-
-  new azureComputeUtils().postErrorHandling(inputs, outputs);
-  var responseBody = JSON.parse(inputs['responseBody']);
-  var sizeList =[];
-  var data =[];
-  var sizes = responseBody.value;
-  sizes.forEach(function(property){
-    sizeList.push({
-      label:property['name'],
-      name:property['name']
-
+  var successCodes = ['200', '202', '201'];
+  var arrayUtil = new global.ArrayUtil();
+  if (arrayUtil.contains(successCodes, inputs.status)) {
+    var responseBody = JSON.parse(inputs['responseBody']);
+    var sizeList =[];
+    var data =[];
+    var availableSizes =[];
+    var sizes = responseBody.value;
+    sizes.forEach(function(property){
+      sizeList.push({
+        label:property['name'],
+        name:property['name']
+      });
+      availableSizes.push(property);
     });
-  });
-  
-  outputs.avaiablesizes = {data:sizeList};
+    outputs.status = 'Success';
+    outputs.avaiablesizes = {'Details':availableSizes};
+    outputs.sizelist = {data:sizeList};
+  } else {
+    new AzureComputeUtils().postErrorHandling(inputs, outputs);
+  }
 })(inputs, outputs);
+  
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -4979,7 +5463,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -5060,7 +5544,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -5075,7 +5559,88 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=b7e2d99cdb638850757af1471d961908^sys_idNOT IN874ecf89db2b8810ec8adf6b5e961999,8cf2d99cdb638850757af1471d961921,bbe2d99cdb638850757af1471d961918"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b7e2d99cdb638850757af1471d961908^sys_idNOT IN2b38d67edbab0010ec8adf6b5e9619ad,874ecf89db2b8810ec8adf6b5e961999,8cf2d99cdb638850757af1471d961921,bbe2d99cdb638850757af1471d961918"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=1c054fd3-4a93-4046-9857-4e140b2d2096</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sizelist</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Size List</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Post Processing ">b7e2d99cdb638850757af1471d961908</model>
+        <model_id>b7e2d99cdb638850757af1471d961908</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b7e2d99cdb638850757af1471d961908</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:40</sys_created_on>
+        <sys_id>2b38d67edbab0010ec8adf6b5e9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -5142,7 +5707,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-13 04:13:28</sys_updated_on>
@@ -5223,7 +5788,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -5304,7 +5869,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -5320,7 +5885,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="List Available sizes by location">a3e2999cdb638850757af1471d961999</action>
+        <action display_value="List Available Sizes By Location">a3e2999cdb638850757af1471d961999</action>
         <cid>bcebb578-f31a-4904-99ef-c5bc313a04d8</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -5336,14 +5901,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:02</sys_created_on>
         <sys_id>e3e2999cdb638850757af1471d9619b5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3e2999cdb638850757af1471d9619b5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5368,12 +5933,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-10 11:19:02</sys_created_on>
         <sys_id>fbe2999cdb638850757af1471d9619ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-// ... code ...&#13;
-})(inputs, outputs);&#13;
+        <sys_updated_on>2020-03-18 10:46:39</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  new AzureComputeUtils().checkIfEmpty(inputs);
+})(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -5493,7 +6058,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -5574,7 +6139,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -5604,9 +6169,9 @@
         <sys_id>2fe2999cdb638850757af1471d9619b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
@@ -5627,21 +6192,21 @@
         <sys_id>afe2999cdb638850757af1471d96199f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:02</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999^sys_idNOT IN1b4ecf89db2b8810ec8adf6b5e9619ae,c4f2d99cdb638850757af1471d961936,ccf2d99cdb638850757af1471d96193c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999^sys_idNOT IN1b4ecf89db2b8810ec8adf6b5e9619ae,2338d67edbab0010ec8adf6b5e9619c7,c4f2d99cdb638850757af1471d961936,ccf2d99cdb638850757af1471d96193c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
         <help/>
         <hint/>
-        <label>Available Sizes</label>
+        <label>Size List</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
         <plural/>
@@ -5649,14 +6214,37 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:13:29</sys_created_on>
         <sys_id>1b4ecf89db2b8810ec8adf6b5e9619ae</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-13 04:13:29</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>size_details</element>
+        <help/>
+        <hint/>
+        <label>Size Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a3e2999cdb638850757af1471d961999</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 10:46:40</sys_created_on>
+        <sys_id>2338d67edbab0010ec8adf6b5e9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 10:46:40</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5674,9 +6262,9 @@
         <sys_id>c4f2d99cdb638850757af1471d961936</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>
@@ -5697,9 +6285,9 @@
         <sys_id>ccf2d99cdb638850757af1471d96193c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-03-10 11:19:03</sys_updated_on>

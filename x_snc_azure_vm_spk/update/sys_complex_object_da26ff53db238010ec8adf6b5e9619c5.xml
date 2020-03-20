@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1a26ff53912380106e24c9e0e287d5c5</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FD1a26ff53912380106e24c9e0e287d5c5":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Powerstate\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"},"displayStatus":"String","displayStatus.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Display Status\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\"}"}},"FlowDesigner:FD1a26ff53912380106e24c9e0e287d5c5.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Statuses\",\"mandatory\":\"true\",\"uiUniqueId\":\"5b872384-74c9-4203-ba9d-93bb5e65c8eb\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1a26ff53912380106e24c9e0e287d5c5\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 06:53:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>da26ff53db238010ec8adf6b5e9619c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FD1a26ff53912380106e24c9e0e287d5c5</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_da26ff53db238010ec8adf6b5e9619c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 07:02:43</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

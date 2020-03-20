@@ -2,41 +2,41 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
-        <api_name>x_snc_azure_vm_spk.azureComputeUtils</api_name>
+        <api_name>x_snc_azure_vm_spk.AzureComputeUtils</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
-        <name>azureComputeUtils</name>
-        <script><![CDATA[var azureComputeUtils = Class.create();
-azureComputeUtils.prototype = {
+        <name>AzureComputeUtils</name>
+        <script><![CDATA[var AzureComputeUtils = Class.create();
+AzureComputeUtils.prototype = {
 	initialize: function() {
 	},
 
-
+	checkIfEmpty:function(inputs){
+		for (var key in inputs) {
+			if (inputs[key] == null || inputs[key].toString().trim() == "") {
+				throw new Error(key + " cannot be empty");
+			}
+		}
+	},
 	postErrorHandling:function(inputs,outputs){
-		
-
-		if (inputs.status != 200 && inputs.status != 201) {
 			outputs.status = 'Error';
 			outputs.error_message = JSON.parse(inputs.responseBody).error.message;
 			return;
-		}
-		outputs.status = 'Success';
-
 	},
-	type: 'azureComputeUtils'
+	type: 'AzureComputeUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-26 06:57:53</sys_created_on>
         <sys_id>595ad940db9f4050757af1471d9619d2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>azureComputeUtils</sys_name>
-        <sys_package display_value="Microsoft Azure Compute Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>AzureComputeUtils</sys_name>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="Microsoft Azure Compute Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_script_include_595ad940db9f4050757af1471d9619d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:00:02</sys_updated_on>
+        <sys_updated_on>2020-03-18 08:09:34</sys_updated_on>
     </sys_script_include>
 </record_update>
