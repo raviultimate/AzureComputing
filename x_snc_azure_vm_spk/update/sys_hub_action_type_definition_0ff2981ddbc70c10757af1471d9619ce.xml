@@ -9,11 +9,39 @@
         <category display_value="Available Sizes">281676a1dbdf0450757af1471d961949</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Specified Virtual Machine can be Resized.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Vm Name&lt;/b&gt; - The Name of the Virtual Machine.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Virtual Machine Not Available&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>list_available_sizes</internal_name>
         <label_cache>[{"name":"{{action.subscriptionid}}","label":"action➛subscriptionId","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.subscription_id1}}","label":"action➛subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vmname}}","label":"action➛vmName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛VM Name","type":"action","ref":""},{"name":"{{step[1b44baf0-0d7f-4513-b249-be494c210d4e].status_code}}","label":"step➛List Available Sizes Specific to VM➛Status Code","type":"step","ref":""},{"name":"{{step[1b44baf0-0d7f-4513-b249-be494c210d4e].response_body}}","label":"step➛List Available Sizes Specific to VM➛Response Body","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].avaiablesizes}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].available_sizes}}","label":"step➛Post Processing➛Available Sizes","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].availablesizes}}","label":"step➛Post Processing➛Available Sizes","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].size_list}}","label":"step➛Post Processing➛Size List","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].sizelist}}","label":"step➛Post Processing➛Size List","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>f25eda72dbeb0010ec8adf6b5e961965</latest_snapshot>
+        <latest_snapshot>f93504b0db730410757af1471d9619b2</latest_snapshot>
         <master_snapshot>afedbe69dbdf0450757af1471d961937</master_snapshot>
         <name>List Available Sizes Specific to VM</name>
         <natlang/>
@@ -25,7 +53,7 @@
         <sys_created_on>2020-02-17 12:42:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>0ff2981ddbc70c10757af1471d9619ce</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>List Available Sizes Specific to VM</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +61,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_0ff2981ddbc70c10757af1471d9619ce</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:13:27</sys_updated_on>
+        <sys_updated_on>2020-03-24 05:12:14</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1712,9 +1740,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-18 11:10:24</sys_created_on>
         <sys_id>dfadde32dbeb0010ec8adf6b5e9619dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:13:18</sys_updated_on>
+        <sys_updated_on>2020-03-24 05:12:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dfadde32dbeb0010ec8adf6b5e9619dc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3815,13 +3843,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="List Available Sizes Specific to VM">0ff2981ddbc70c10757af1471d9619ce</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"70fdfe69dbdf0450757af1471d961998","name":"plan"}}</plan>
-        <snapshot>f25eda72dbeb0010ec8adf6b5e961965</snapshot>
+        <snapshot>f93504b0db730410757af1471d9619b2</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:03:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>70fdfe69dbdf0450757af1471d961998</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3829,7 +3857,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:13:31</sys_updated_on>
+        <sys_updated_on>2020-03-24 05:12:17</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3840,7 +3868,35 @@
         <category display_value="Available Sizes">281676a1dbdf0450757af1471d961949</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Specified Virtual Machine can be Resized.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Vm Name&lt;/b&gt; - The Name of the Virtual Machine.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Virtual Machine Not Available&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>list_available_sizes_specific_to_vm</internal_name>
         <label_cache>[{"name":"{{action.subscriptionid}}","label":"action➛subscriptionId","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.subscription_id1}}","label":"action➛subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vmname}}","label":"action➛vmName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛VM Name","type":"action","ref":""},{"name":"{{step[1b44baf0-0d7f-4513-b249-be494c210d4e].status_code}}","label":"step➛List Available Sizes Specific to VM➛Status Code","type":"step","ref":""},{"name":"{{step[1b44baf0-0d7f-4513-b249-be494c210d4e].response_body}}","label":"step➛List Available Sizes Specific to VM➛Response Body","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].avaiablesizes}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].available_sizes}}","label":"step➛Post Processing➛Available Sizes","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].availablesizes}}","label":"step➛Post Processing➛Available Sizes","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].size_list}}","label":"step➛Post Processing➛Size List","type":"step","ref":""},{"name":"{{step[af068e20-61d0-4de8-ae40-2f4d4938991b].sizelist}}","label":"step➛Post Processing➛Size List","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3854,7 +3910,7 @@
         <sys_created_on>2020-03-02 06:03:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>afedbe69dbdf0450757af1471d961937</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3862,7 +3918,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 10:52:26</sys_updated_on>
+        <sys_updated_on>2020-03-24 05:12:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -5291,9 +5347,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-18 11:10:39</sys_created_on>
         <sys_id>7abd9272dbeb0010ec8adf6b5e9619a9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:13:26</sys_updated_on>
+        <sys_updated_on>2020-03-24 05:12:12</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7abd9272dbeb0010ec8adf6b5e9619a9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">

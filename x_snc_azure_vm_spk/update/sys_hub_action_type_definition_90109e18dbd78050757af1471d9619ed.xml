@@ -9,11 +9,39 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Run-Time State of a Virtual Machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Instance Not Found&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>get_runtime_state_of_vm</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.variable1}}","label":"action➛variable1","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{step[6ad4c570-e365-4e4b-98a0-39db700dbdca].status_code}}","label":"step➛Get Run-Time State of VM➛Status Code","type":"step","ref":""},{"name":"{{step[6ad4c570-e365-4e4b-98a0-39db700dbdca].response_body}}","label":"step➛Get Run-Time State of VM➛Response Body","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses}}","label":"step➛Post Processing➛Statuses","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.statuses_child1}}","label":"step➛Post Processing➛Statuses➛Statuses_child1","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.code}}","label":"step➛Post Processing➛Statuses➛Powerstate","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.statuses_child2}}","label":"step➛Post Processing➛Statuses➛Statuses_child2","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.Display_Status}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.display}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.displayStatus}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>ff28f7d3db238010ec8adf6b5e961925</latest_snapshot>
+        <latest_snapshot>0bf88128dbfbc010757af1471d961922</latest_snapshot>
         <master_snapshot>06fb7229dbdf0450757af1471d961953</master_snapshot>
         <name>Get Run-Time State of VM</name>
         <natlang/>
@@ -25,7 +53,7 @@
         <sys_created_on>2020-02-27 05:30:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>90109e18dbd78050757af1471d9619ed</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Get Run-Time State of VM</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +61,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_90109e18dbd78050757af1471d9619ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:56</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:49</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1356,9 +1384,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 06:53:57</sys_created_on>
         <sys_id>c626ff53db238010ec8adf6b5e961976</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:43</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:42</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c626ff53db238010ec8adf6b5e961976"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3061,27 +3089,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed^sys_idNOT INa2a6f393db238010ec8adf6b5e961971,ca26ff53db238010ec8adf6b5e96196f,6ea6f393db238010ec8adf6b5e961971,2aa6f393db238010ec8adf6b5e961972,e2a6f393db238010ec8adf6b5e961973,aea6f393db238010ec8adf6b5e961973,e2a6b793db238010ec8adf6b5e961914,aea6b793db238010ec8adf6b5e961914"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed^sys_idNOT INca26ff53db238010ec8adf6b5e96196f,a2a6f393db238010ec8adf6b5e961971,6ea6f393db238010ec8adf6b5e961971,2aa6f393db238010ec8adf6b5e961972,e2a6f393db238010ec8adf6b5e961973,aea6f393db238010ec8adf6b5e961973,e2a6b793db238010ec8adf6b5e961914,aea6b793db238010ec8adf6b5e961914"/>
     <sys_choice field="vm_name" table="var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>vm_name</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>datascience</label>
-            <language>en</language>
-            <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>0</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-03-20 06:56:10</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>a2a6f393db238010ec8adf6b5e961971</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
-            <value>datascience</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>vm_name</element>
@@ -3090,16 +3099,35 @@
             <label>-- None --</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>1</sequence>
+            <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:53:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ca26ff53db238010ec8adf6b5e96196f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:53:57</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>vm_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>datascience</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-20 06:56:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2a6f393db238010ec8adf6b5e961971</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
+            <value>datascience</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -3109,15 +3137,15 @@
             <label>datasciencefromsnow</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>1</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6ea6f393db238010ec8adf6b5e961971</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>datasciencefromsnow</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3128,15 +3156,15 @@
             <label>imagenewvm</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>2</sequence>
+            <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2aa6f393db238010ec8adf6b5e961972</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>imagenewvm</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3147,15 +3175,15 @@
             <label>myfirstVM</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>3</sequence>
+            <sequence>4</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e2a6f393db238010ec8adf6b5e961973</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>myfirstVM</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3166,15 +3194,15 @@
             <label>myvmMarket</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>4</sequence>
+            <sequence>5</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>aea6f393db238010ec8adf6b5e961973</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>myvmMarket</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3185,15 +3213,15 @@
             <label>testvirtualmachine</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>5</sequence>
+            <sequence>6</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e2a6b793db238010ec8adf6b5e961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>testvirtualmachine</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3204,15 +3232,15 @@
             <label>VMfromImage</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_90109e18dbd78050757af1471d9619ed</name>
-            <sequence>6</sequence>
+            <sequence>7</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-03-20 06:56:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>aea6b793db238010ec8adf6b5e961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-03-20 06:56:10</sys_updated_on>
+            <sys_updated_on>2020-03-23 15:29:24</sys_updated_on>
             <value>VMfromImage</value>
         </sys_choice>
     </sys_choice>
@@ -3350,13 +3378,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Run-Time State of VM">90109e18dbd78050757af1471d9619ed</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"57fbb229dbdf0450757af1471d961998","name":"plan"}}</plan>
-        <snapshot>ff28f7d3db238010ec8adf6b5e961925</snapshot>
+        <snapshot>0bf88128dbfbc010757af1471d961922</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:54:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>57fbb229dbdf0450757af1471d961998</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3364,7 +3392,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:03:03</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:53</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3375,7 +3403,35 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Run-Time State of a Virtual Machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Instance Not Found&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>get_runtime_state_of_vm</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.variable1}}","label":"action➛variable1","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{step[6ad4c570-e365-4e4b-98a0-39db700dbdca].status_code}}","label":"step➛Get Run-Time State of VM➛Status Code","type":"step","ref":""},{"name":"{{step[6ad4c570-e365-4e4b-98a0-39db700dbdca].response_body}}","label":"step➛Get Run-Time State of VM➛Response Body","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses}}","label":"step➛Post Processing➛Statuses","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.statuses_child1}}","label":"step➛Post Processing➛Statuses➛Statuses_child1","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.code}}","label":"step➛Post Processing➛Statuses➛Powerstate","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.statuses_child2}}","label":"step➛Post Processing➛Statuses➛Statuses_child2","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.Display_Status}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.display}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""},{"name":"{{step[40918952-9966-4bd9-acf8-056cd867b740].statuses.displayStatus}}","label":"step➛Post Processing➛Statuses➛Display Status","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3389,7 +3445,7 @@
         <sys_created_on>2020-03-02 05:54:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>06fb7229dbdf0450757af1471d961953</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3397,7 +3453,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:53</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:48</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4391,7 +4447,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDed383bd325238010a2af22a33a6d854a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb</attributes>
+        <attributes>co_type_name=FDfbf8812820fbc010a940d1b7f038e8ff,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4449,14 +4505,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 07:02:55</sys_created_on>
         <sys_id>29383bd3db238010ec8adf6b5e961951</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:55</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4720,9 +4776,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 07:02:54</sys_created_on>
         <sys_id>99383bd3db238010ec8adf6b5e961913</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:54</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:48</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=99383bd3db238010ec8adf6b5e961913"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4920,7 +4976,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD65383bd364238010e119d60481de765c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=40918952-9966-4bd9-acf8-056cd867b740,sourceType=step,sourceUiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb,uiType=object,uiTypeLabel=Object,uiUniqueId=b0fd9e43-6b44-47b9-8407-772a84496ef4</attributes>
+        <attributes>co_type_name=FD0809c12847fbc0105408493dca1f271c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=40918952-9966-4bd9-acf8-056cd867b740,sourceType=step,sourceUiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb,uiType=object,uiTypeLabel=Object,uiUniqueId=b0fd9e43-6b44-47b9-8407-772a84496ef4</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4980,14 +5036,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 07:02:56</sys_created_on>
         <sys_id>21383bd3db238010ec8adf6b5e961963</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:56</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6116,7 +6172,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDed383bd325238010a2af22a33a6d854a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb</attributes>
+        <attributes>co_type_name=FDfbf8812820fbc010a940d1b7f038e8ff,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5b872384-74c9-4203-ba9d-93bb5e65c8eb</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -6174,14 +6230,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 07:02:55</sys_created_on>
         <sys_id>29383bd3db238010ec8adf6b5e961951</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 07:02:55</sys_updated_on>
+        <sys_updated_on>2020-03-23 15:29:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

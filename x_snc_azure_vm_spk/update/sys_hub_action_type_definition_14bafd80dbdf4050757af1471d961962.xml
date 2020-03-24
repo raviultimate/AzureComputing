@@ -9,11 +9,37 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Shuts down the Virtual Machine and releases the Compute Resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>deallocate_instance</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{step[8cd6c354-29be-4aa5-b7f8-db5ec078861e].status_code}}","label":"step➛Deallocate Instance➛Status Code","type":"step","ref":""},{"name":"{{step[8cd6c354-29be-4aa5-b7f8-db5ec078861e].response_body}}","label":"step➛Deallocate Instance➛Response Body","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>eaa3af17dbef4010ec8adf6b5e961955</latest_snapshot>
+        <latest_snapshot>2698fc2cdbbbc010757af1471d961944</latest_snapshot>
         <master_snapshot>38baba65dbdf0450757af1471d961978</master_snapshot>
         <name>Deallocate Instance</name>
         <natlang/>
@@ -25,7 +51,7 @@
         <sys_created_on>2020-02-26 09:18:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>14bafd80dbdf4050757af1471d961962</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Deallocate Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +59,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_14bafd80dbdf4050757af1471d961962</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 05:33:13</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:18:16</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -445,14 +471,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-26 09:30:43</sys_created_on>
         <sys_id>9e7df904dbdf4050757af1471d9619af</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-28 07:40:36</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:00:50</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9e7df904dbdf4050757af1471d9619af"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -561,10 +587,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-26 09:30:44</sys_created_on>
         <sys_id>ee7df904dbdf4050757af1471d9619e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-26 09:30:44</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-23 14:00:50</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=9e7df904dbdf4050757af1471d9619af"/>
@@ -1449,9 +1475,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 04:52:13</sys_created_on>
         <sys_id>7a4a97dfdbaf4010ec8adf6b5e9619ce</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 05:33:05</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:18:07</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7a4a97dfdbaf4010ec8adf6b5e9619ce"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2030,14 +2056,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-26 09:30:43</sys_created_on>
         <sys_id>9e7df904dbdf4050757af1471d9619af</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-28 07:40:36</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:00:50</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9e7df904dbdf4050757af1471d9619af"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2146,10 +2172,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-26 09:30:44</sys_created_on>
         <sys_id>ee7df904dbdf4050757af1471d9619e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-26 09:30:44</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-23 14:00:50</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=9e7df904dbdf4050757af1471d9619af"/>
@@ -3137,13 +3163,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Deallocate Instance">14bafd80dbdf4050757af1471d961962</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"42bafa65dbdf0450757af1471d9619e5","name":"plan"}}</plan>
-        <snapshot>eaa3af17dbef4010ec8adf6b5e961955</snapshot>
+        <snapshot>2698fc2cdbbbc010757af1471d961944</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:49:12</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>42bafa65dbdf0450757af1471d9619e5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3151,7 +3177,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 05:33:16</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:18:18</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3162,7 +3188,33 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Shuts down the Virtual Machine and releases the Compute Resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>deallocate_instance</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{step[8cd6c354-29be-4aa5-b7f8-db5ec078861e].status_code}}","label":"step➛Deallocate Instance➛Status Code","type":"step","ref":""},{"name":"{{step[8cd6c354-29be-4aa5-b7f8-db5ec078861e].response_body}}","label":"step➛Deallocate Instance➛Response Body","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[c5b10f09-c674-4e60-96d2-7febe874f660].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3176,7 +3228,7 @@
         <sys_created_on>2020-03-02 05:49:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>38baba65dbdf0450757af1471d961978</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3184,7 +3236,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:49:06</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:18:15</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4035,14 +4087,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:49:07</sys_created_on>
         <sys_id>8dbaba65dbdf0450757af1471d9619b7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:49:07</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:03:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8dbaba65dbdf0450757af1471d9619b7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4067,10 +4119,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:49:07</sys_created_on>
         <sys_id>0dbaba65dbdf0450757af1471d9619cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:49:07</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-23 14:03:38</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4438,9 +4490,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 05:24:17</sys_created_on>
         <sys_id>e0a1e7d3dbef4010ec8adf6b5e96194f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 05:33:12</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:18:15</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e0a1e7d3dbef4010ec8adf6b5e96194f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5620,14 +5672,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:49:07</sys_created_on>
         <sys_id>8dbaba65dbdf0450757af1471d9619b7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:49:07</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:03:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8dbaba65dbdf0450757af1471d9619b7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5652,10 +5704,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:49:07</sys_created_on>
         <sys_id>0dbaba65dbdf0450757af1471d9619cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-02 05:49:07</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-type","value":"application/json"}]}</value>
+        <sys_updated_on>2020-03-23 14:03:38</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">

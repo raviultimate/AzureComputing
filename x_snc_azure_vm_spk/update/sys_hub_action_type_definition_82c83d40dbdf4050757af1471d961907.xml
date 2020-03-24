@@ -9,11 +9,42 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Operation to Update a Virtual Machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Logical Unit Number&lt;/b&gt; - Specifies the Logical Unit Number of the data disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;toBeDetached&lt;/b&gt; - Specifies Whether the Data Disk is in Process of Detachment from the VirtualMachine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Create Option&lt;/b&gt; - Specifies How the Virtual Machine should be Created.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Caching&lt;/b&gt; - Specifies the Caching Requirements.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Storage Account Type&lt;/b&gt; - Specifies the Storage Account type for the Managed Disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Source&lt;/b&gt; - The Resource Status Information. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>update</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{action.data_disk_lun}}","label":"action➛Data Disk Lun","type":"action","ref":""},{"name":"{{action.disk_logical_unit_number}}","label":"action➛Disk Logical Unit Number","type":"action","ref":""},{"name":"{{action.lun}}","label":"action➛Disk Logical Unit Number","type":"action","ref":""},{"name":"{{action.disk_create_option}}","label":"action➛Disk Create Option","type":"action","ref":""},{"name":"{{action.createoption}}","label":"action➛Disk Create Option","type":"action","ref":""},{"name":"{{action.disk_storgae_account_type}}","label":"action➛Disk Storgae Account Type","type":"action","ref":""},{"name":"{{action.disk_storage_account_type}}","label":"action➛Disk Storage Account Type","type":"action","ref":""},{"name":"{{action.disk}}","label":"action➛Disk","type":"action","ref":""},{"name":"{{action.disk_caching}}","label":"action➛Disk Caching","type":"action","ref":""},{"name":"{{action.disk_source}}","label":"action➛Disk Source","type":"action","ref":""},{"name":"{{action.tobedetached}}","label":"action➛toBeDetached","type":"action","ref":""},{"name":"{{step[46d29e6b-ca0f-4b6e-b7b1-d0ae8cb10d77].status_code}}","label":"step➛Update Instance➛Status Code","type":"step","ref":""},{"name":"{{step[46d29e6b-ca0f-4b6e-b7b1-d0ae8cb10d77].response_body}}","label":"step➛Update Instance➛Response Body","type":"step","ref":""},{"name":"{{step[d45ed5c5-801b-481d-9a73-dca197ebcb81].status}}","label":"step➛Post Processing➛Error","type":"step","ref":""},{"name":"{{step[d45ed5c5-801b-481d-9a73-dca197ebcb81].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[d3d93c1c-aa42-42e9-a6ac-cb130593f2c2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[d3d93c1c-aa42-42e9-a6ac-cb130593f2c2].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>fd16486fdb238010ec8adf6b5e96195f</latest_snapshot>
+        <latest_snapshot>8219386cdbbbc010757af1471d96198f</latest_snapshot>
         <master_snapshot>4c8a7665dbdf0450757af1471d961960</master_snapshot>
         <name>Update Disk on Instance</name>
         <natlang/>
@@ -25,7 +56,7 @@
         <sys_created_on>2020-02-26 09:10:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>82c83d40dbdf4050757af1471d961907</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_name>Update Disk on Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +64,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_82c83d40dbdf4050757af1471d961907</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:24</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1978,9 +2009,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 09:28:10</sys_created_on>
         <sys_id>c4bc34e6db2b4c10ec8adf6b5e961921</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:27</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:15</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c4bc34e6db2b4c10ec8adf6b5e961921"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -2234,9 +2265,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 11:19:56</sys_created_on>
         <sys_id>d546d926db6b4c10ec8adf6b5e9619be</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:27</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:15</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d546d926db6b4c10ec8adf6b5e9619be"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -2652,9 +2683,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 11:19:56</sys_created_on>
         <sys_id>c546d926db6b4c10ec8adf6b5e9619b4</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:27</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:15</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c546d926db6b4c10ec8adf6b5e9619b4"/>
     <sys_hub_action_output action="delete_multiple" query="model=82c83d40dbdf4050757af1471d961907^sys_idNOT IN01754a48dbdf4050757af1471d96191c,cd754a48dbdf4050757af1471d961912"/>
@@ -5221,13 +5252,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Update Disk on Instance">82c83d40dbdf4050757af1471d961907</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1d8ab665dbdf0450757af1471d9619c2","name":"plan"}}</plan>
-        <snapshot>fd16486fdb238010ec8adf6b5e96195f</snapshot>
+        <snapshot>8219386cdbbbc010757af1471d96198f</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 05:48:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1d8ab665dbdf0450757af1471d9619c2</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -5235,7 +5266,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:43</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:28</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5246,7 +5277,38 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Operation to Update a Virtual Machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Logical Unit Number&lt;/b&gt; - Specifies the Logical Unit Number of the data disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;toBeDetached&lt;/b&gt; - Specifies Whether the Data Disk is in Process of Detachment from the VirtualMachine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Create Option&lt;/b&gt; - Specifies How the Virtual Machine should be Created.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Caching&lt;/b&gt; - Specifies the Caching Requirements.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Storage Account Type&lt;/b&gt; - Specifies the Storage Account type for the Managed Disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk Source&lt;/b&gt; - The Resource Status Information. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>update_instance</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.vm_name}}","label":"action➛Vm Name","type":"action","ref":""},{"name":"{{action.data_disk_lun}}","label":"action➛Data Disk Lun","type":"action","ref":""},{"name":"{{action.disk_logical_unit_number}}","label":"action➛Disk Logical Unit Number","type":"action","ref":""},{"name":"{{action.lun}}","label":"action➛Disk Logical Unit Number","type":"action","ref":""},{"name":"{{action.disk_create_option}}","label":"action➛Disk Create Option","type":"action","ref":""},{"name":"{{action.createoption}}","label":"action➛Disk Create Option","type":"action","ref":""},{"name":"{{action.disk_storgae_account_type}}","label":"action➛Disk Storgae Account Type","type":"action","ref":""},{"name":"{{action.disk_storage_account_type}}","label":"action➛Disk Storage Account Type","type":"action","ref":""},{"name":"{{action.disk}}","label":"action➛Disk","type":"action","ref":""},{"name":"{{action.disk_caching}}","label":"action➛Disk Caching","type":"action","ref":""},{"name":"{{action.disk_source}}","label":"action➛Disk Source","type":"action","ref":""},{"name":"{{action.tobedetached}}","label":"action➛toBeDetached","type":"action","ref":""},{"name":"{{step[46d29e6b-ca0f-4b6e-b7b1-d0ae8cb10d77].status_code}}","label":"step➛Update Instance➛Status Code","type":"step","ref":""},{"name":"{{step[46d29e6b-ca0f-4b6e-b7b1-d0ae8cb10d77].response_body}}","label":"step➛Update Instance➛Response Body","type":"step","ref":""},{"name":"{{step[d45ed5c5-801b-481d-9a73-dca197ebcb81].status}}","label":"step➛Post Processing➛Error","type":"step","ref":""},{"name":"{{step[d45ed5c5-801b-481d-9a73-dca197ebcb81].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[d3d93c1c-aa42-42e9-a6ac-cb130593f2c2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[d3d93c1c-aa42-42e9-a6ac-cb130593f2c2].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -5260,7 +5322,7 @@
         <sys_created_on>2020-03-02 05:48:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>4c8a7665dbdf0450757af1471d961960</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -5268,7 +5330,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-17 12:47:37</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:23</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -7375,9 +7437,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 11:25:29</sys_created_on>
         <sys_id>a287d966db6b4c10ec8adf6b5e961936</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:38</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:23</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a287d966db6b4c10ec8adf6b5e961936"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -7550,9 +7612,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 11:25:29</sys_created_on>
         <sys_id>de87d966db6b4c10ec8adf6b5e96192b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:38</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:23</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=de87d966db6b4c10ec8adf6b5e96192b"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -7806,9 +7868,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-17 11:25:28</sys_created_on>
         <sys_id>9e87d966db6b4c10ec8adf6b5e96190f</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:03:37</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:20:23</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9e87d966db6b4c10ec8adf6b5e96190f"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">

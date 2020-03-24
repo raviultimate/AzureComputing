@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-22 15:17:52</sys_created_on>
+        <sys_id>e39c7f4cdb7bc010ec8adf6b5e9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AzureComputeUtils</sys_name>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_scope_privilege_e39c7f4cdb7bc010ec8adf6b5e9619f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-22 15:17:52</sys_updated_on>
+        <target_name>AzureComputeUtils</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

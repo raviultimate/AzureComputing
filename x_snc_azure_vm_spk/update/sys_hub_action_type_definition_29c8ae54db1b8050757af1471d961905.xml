@@ -9,11 +9,38 @@
         <category display_value="Virtual Machine Image">cd86baa1dbdf0450757af1471d9619cd</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Gets a list of Virtual Machine Image Publishers for the Specified Azure Location.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - The Name of a Supported Azure Region.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Publisher Name&lt;/b&gt; - A Valid Image Publisher.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Offer&lt;/b&gt; - A Valid Image Publisher Offer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;Invalid Publisher Name&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>list_offers</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.variable1}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.variable2}}","label":"action➛","type":"action","ref":""},{"name":"{{action.publishername}}","label":"action➛publisherName","type":"action","ref":""},{"name":"{{action.publisher_name}}","label":"action➛Publisher Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{step[162f9917-0cb1-456f-804d-8f48710752ea].status_code}}","label":"step➛List Offers➛Status Code","type":"step","ref":""},{"name":"{{step[162f9917-0cb1-456f-804d-8f48710752ea].response_body}}","label":"step➛List Offers➛Response Body","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].offers}}","label":"step➛Post Processing➛Offers","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>2ae214a7db638010ec8adf6b5e961983</latest_snapshot>
+        <latest_snapshot>b0e5587cdb730410757af1471d9619b7</latest_snapshot>
         <master_snapshot>00be36e9dbdf0450757af1471d96196f</master_snapshot>
         <name>List Offers</name>
         <natlang/>
@@ -25,7 +52,7 @@
         <sys_created_on>2020-02-27 07:18:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>29c8ae54db1b8050757af1471d961905</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>List Offers</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +60,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_29c8ae54db1b8050757af1471d961905</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:59:39</sys_updated_on>
+        <sys_updated_on>2020-03-24 06:25:04</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1527,9 +1554,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 08:58:02</sys_created_on>
         <sys_id>bb82d867db638010ec8adf6b5e9619cd</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:59:31</sys_updated_on>
+        <sys_updated_on>2020-03-24 06:24:55</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bb82d867db638010ec8adf6b5e9619cd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3235,13 +3262,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="List Offers">29c8ae54db1b8050757af1471d961905</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1dbe76e9dbdf0450757af1471d96198e","name":"plan"}}</plan>
-        <snapshot>2ae214a7db638010ec8adf6b5e961983</snapshot>
+        <snapshot>b0e5587cdb730410757af1471d9619b7</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:06:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1dbe76e9dbdf0450757af1471d96198e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3249,7 +3276,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:59:42</sys_updated_on>
+        <sys_updated_on>2020-03-24 06:25:07</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3260,7 +3287,34 @@
         <category display_value="Virtual Machine Image">cd86baa1dbdf0450757af1471d9619cd</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Gets a list of Virtual Machine Image Publishers for the Specified Azure Location.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - The Name of a Supported Azure Region.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Publisher Name&lt;/b&gt; - A Valid Image Publisher.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Offer&lt;/b&gt; - A Valid Image Publisher Offer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;Invalid Publisher Name&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>list_offers</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.variable1}}","label":"action➛","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.variable2}}","label":"action➛","type":"action","ref":""},{"name":"{{action.publishername}}","label":"action➛publisherName","type":"action","ref":""},{"name":"{{action.publisher_name}}","label":"action➛Publisher Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{step[162f9917-0cb1-456f-804d-8f48710752ea].status_code}}","label":"step➛List Offers➛Status Code","type":"step","ref":""},{"name":"{{step[162f9917-0cb1-456f-804d-8f48710752ea].response_body}}","label":"step➛List Offers➛Response Body","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a5325763-ef38-464d-915c-e3f3fbdedee5].offers}}","label":"step➛Post Processing➛Offers","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3274,7 +3328,7 @@
         <sys_created_on>2020-03-02 06:06:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>00be36e9dbdf0450757af1471d96196f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3282,7 +3336,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-12 17:22:45</sys_updated_on>
+        <sys_updated_on>2020-03-24 06:25:03</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4614,9 +4668,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-20 08:58:48</sys_created_on>
         <sys_id>76b2dc67db638010ec8adf6b5e9619ff</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 08:59:38</sys_updated_on>
+        <sys_updated_on>2020-03-24 06:25:03</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=76b2dc67db638010ec8adf6b5e9619ff"/>
     <sys_variable_value action="INSERT_OR_UPDATE">

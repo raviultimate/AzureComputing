@@ -9,11 +9,41 @@
         <category display_value="Image Management">31963ea1dbdf0450757af1471d9619a1</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Create an Image.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Name&lt;/b&gt; - The Name of the Image.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - Resource Location&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Source Virtual Machine&lt;/b&gt; - The Source Virtual Machine from which Image is Created.&lt;/li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;Invalid Resource Group Name&lt;/li&gt;
+&lt;li&gt;Image Name Not Exists&lt;/li&gt;
+&lt;li&gt;Location Not Found&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>create_image</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.image_name}}","label":"action➛Image Name","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.source}}","label":"action➛Source","type":"action","ref":""},{"name":"{{action.source_virtual_machine}}","label":"action➛Source Virtual Machine","type":"action","ref":""},{"name":"{{step[b4f0fd23-65c8-419d-9f81-0b65f3bfea00].status_code}}","label":"step➛Create Image ➛Status Code","type":"step","ref":""},{"name":"{{step[b4f0fd23-65c8-419d-9f81-0b65f3bfea00].response_body}}","label":"step➛Create Image ➛Response Body","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[16c4e070-a936-49f0-9d82-17531a768316].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[16c4e070-a936-49f0-9d82-17531a768316].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>0b70a6f2dbeb0010ec8adf6b5e961943</latest_snapshot>
+        <latest_snapshot>c9a7b0fcdbb30410757af1471d96193d</latest_snapshot>
         <master_snapshot>db828f6ddbdf0450757af1471d96193d</master_snapshot>
         <name>Create Image from Existing Instance</name>
         <natlang/>
@@ -25,7 +55,7 @@
         <sys_created_on>2020-02-27 09:29:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1bb68b54db5b8050757af1471d961999</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Create Image from Existing Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +63,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1bb68b54db5b8050757af1471d961999</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:22:45</sys_updated_on>
+        <sys_updated_on>2020-03-24 08:52:32</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1913,9 +1943,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-18 11:18:30</sys_created_on>
         <sys_id>318fd6b2dbeb0010ec8adf6b5e9619ad</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:22:37</sys_updated_on>
+        <sys_updated_on>2020-03-24 08:52:24</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=318fd6b2dbeb0010ec8adf6b5e9619ad"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3797,13 +3827,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Image from Existing Instance">1bb68b54db5b8050757af1471d961999</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8992cf6ddbdf0450757af1471d9619a5","name":"plan"}}</plan>
-        <snapshot>0b70a6f2dbeb0010ec8adf6b5e961943</snapshot>
+        <snapshot>c9a7b0fcdbb30410757af1471d96193d</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:23:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>8992cf6ddbdf0450757af1471d9619a5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3811,7 +3841,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:22:48</sys_updated_on>
+        <sys_updated_on>2020-03-24 08:52:35</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3822,7 +3852,37 @@
         <category display_value="Image Management">31963ea1dbdf0450757af1471d9619a1</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Create an Image.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Name&lt;/b&gt; - The Name of the Image.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - Resource Location&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Source Virtual Machine&lt;/b&gt; - The Source Virtual Machine from which Image is Created.&lt;/li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;Invalid Resource Group Name&lt;/li&gt;
+&lt;li&gt;Image Name Not Exists&lt;/li&gt;
+&lt;li&gt;Location Not Found&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>create_image</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.image_name}}","label":"action➛Image Name","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.source}}","label":"action➛Source","type":"action","ref":""},{"name":"{{action.source_virtual_machine}}","label":"action➛Source Virtual Machine","type":"action","ref":""},{"name":"{{step[b4f0fd23-65c8-419d-9f81-0b65f3bfea00].status_code}}","label":"step➛Create Image ➛Status Code","type":"step","ref":""},{"name":"{{step[b4f0fd23-65c8-419d-9f81-0b65f3bfea00].response_body}}","label":"step➛Create Image ➛Response Body","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[b743ce4f-19df-4158-8839-79ec418dc130].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[16c4e070-a936-49f0-9d82-17531a768316].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[16c4e070-a936-49f0-9d82-17531a768316].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3836,7 +3896,7 @@
         <sys_created_on>2020-03-02 06:23:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>db828f6ddbdf0450757af1471d96193d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3844,7 +3904,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:22:44</sys_updated_on>
+        <sys_updated_on>2020-03-24 08:52:31</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -5481,9 +5541,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-18 11:21:04</sys_created_on>
         <sys_id>9b10eeb2dbeb0010ec8adf6b5e9619e5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 11:22:44</sys_updated_on>
+        <sys_updated_on>2020-03-24 08:52:31</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9b10eeb2dbeb0010ec8adf6b5e9619e5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">

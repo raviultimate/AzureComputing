@@ -235,20 +235,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
         <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
-        <sys_id>d5e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
-        <value>centralus</value>
-        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961955</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
         <order>6</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -573,20 +559,6 @@
         <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
         <value>Standard_LRS</value>
         <variable display_value="">86b1da0edb6b0c10ec8adf6b5e961997</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>55e7ff0adb6f0c10ec8adf6b5e9619d1</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-16 09:49:08</sys_created_on>
-        <sys_id>d5e7ff0adb6f0c10ec8adf6b5e9619d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 09:49:08</sys_updated_on>
-        <value>centralus</value>
-        <variable display_value="">7db1da0edb6b0c10ec8adf6b5e961955</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>

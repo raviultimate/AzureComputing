@@ -9,11 +9,39 @@
         <category display_value="Available Sizes">281676a1dbdf0450757af1471d961949</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;To Create a new Virtual Machine in an existing Availability Set.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Availability SetName&lt;/b&gt; - The Name of the Availability Set.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Availability SetName Not Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>list_all_available_sizes_in_availability_set</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.availability_setname}}","label":"action➛Availability SetName","type":"action","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].status_code}}","label":"step➛List all available sizes in Availability SET➛Status Code","type":"step","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].response_body}}","label":"step➛List all available sizes in Availability SET➛Response Body","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].available}}","label":"step➛Post Processing➛Available","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].avaiable_sizes}}","label":"step➛Post Processing➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].avaiablesizes}}","label":"step➛Post Processing➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>cb86563edbab0010ec8adf6b5e9619c2</latest_snapshot>
+        <latest_snapshot>bc7088fcdb330410757af1471d961950</latest_snapshot>
         <master_snapshot>5c1eb2a9dbdf0450757af1471d96195f</master_snapshot>
         <name>List Available Sizes in Availability SET</name>
         <natlang/>
@@ -25,7 +53,7 @@
         <sys_created_on>2020-02-27 06:11:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>cc99929cdbd78050757af1471d961975</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>List Available Sizes in Availability SET</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +61,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_cc99929cdbd78050757af1471d961975</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 10:39:19</sys_updated_on>
+        <sys_updated_on>2020-03-24 04:51:26</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -3166,13 +3194,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="List Available Sizes in Availability SET">cc99929cdbd78050757af1471d961975</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"291ef2a9dbdf0450757af1471d9619d6","name":"plan"}}</plan>
-        <snapshot>cb86563edbab0010ec8adf6b5e9619c2</snapshot>
+        <snapshot>bc7088fcdb330410757af1471d961950</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-02 06:03:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>291ef2a9dbdf0450757af1471d9619d6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3180,7 +3208,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 10:39:22</sys_updated_on>
+        <sys_updated_on>2020-03-24 04:51:29</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3191,7 +3219,35 @@
         <category display_value="Available Sizes">281676a1dbdf0450757af1471d961949</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;To Create a new Virtual Machine in an existing Availability Set.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - The name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Availability SetName&lt;/b&gt; - The Name of the Availability Set.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;Availability SetName Not Exists&lt;/li&gt;
+&lt;li&gt;Authentication Error&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>list_all_available_sizes_in_availability_set</internal_name>
         <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.availability_setname}}","label":"action➛Availability SetName","type":"action","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].status_code}}","label":"step➛List all available sizes in Availability SET➛Status Code","type":"step","ref":""},{"name":"{{step[4b6bc324-b024-47b9-9cad-6edbfd8a14ab].response_body}}","label":"step➛List all available sizes in Availability SET➛Response Body","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].available}}","label":"step➛Post Processing➛Available","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].avaiable_sizes}}","label":"step➛Post Processing➛Avaiable Sizes","type":"step","ref":""},{"name":"{{step[4c324f04-d7c9-42ce-842f-17999122a7f9].avaiablesizes}}","label":"step➛Post Processing➛Avaiable Sizes","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3205,7 +3261,7 @@
         <sys_created_on>2020-03-02 06:03:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>5c1eb2a9dbdf0450757af1471d96195f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3213,7 +3269,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-18 08:12:57</sys_updated_on>
+        <sys_updated_on>2020-03-24 04:51:25</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>

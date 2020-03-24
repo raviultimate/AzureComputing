@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0809c12847fbc0105408493dca1f271c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>6507a700db0b8810757af1471d96191f</scope_name>
+        <serialized_content>{"FlowDesigner:FD0809c12847fbc0105408493dca1f271c":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Powerstate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"6e67937e-6888-49b0-be51-344bc2fe0c09\"}"},"displayStatus":"String","displayStatus.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Display Status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a69b025b-27ed-4bb7-999d-2609f636aa45\"}"}},"FlowDesigner:FD0809c12847fbc0105408493dca1f271c.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"40918952-9966-4bd9-acf8-056cd867b740\",\"default_value\":\"\",\"label\":\"Statuses\",\"mandatory\":\"false\",\"uiUniqueId\":\"b0fd9e43-6b44-47b9-8407-772a84496ef4\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0809c12847fbc0105408493dca1f271c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"5b872384-74c9-4203-ba9d-93bb5e65c8eb\",\"hint\":null,\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-23 15:29:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c809c128dbfbc010757af1471d96191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD0809c12847fbc0105408493dca1f271c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_complex_object_c809c128dbfbc010757af1471d96191c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-23 15:29:49</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

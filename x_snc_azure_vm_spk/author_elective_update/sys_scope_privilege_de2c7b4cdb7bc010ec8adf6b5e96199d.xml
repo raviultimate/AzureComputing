@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>execute</operation>
+        <source_scope display_value="Slack">4498e982539023007877ddeeff7b12e3</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-22 15:17:08</sys_created_on>
+        <sys_id>de2c7b4cdb7bc010ec8adf6b5e96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AzureComputeUtils</sys_name>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_update_name>sys_scope_privilege_de2c7b4cdb7bc010ec8adf6b5e96199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-22 15:17:08</sys_updated_on>
+        <target_name>AzureComputeUtils</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</application>
+        <file_path/>
+        <instance_id>58151fc6db314454387021c405961954</instance_id>
+        <instance_name>empravispokes</instance_name>
+        <name>sys_scope_privilege_de2c7b4cdb7bc010ec8adf6b5e96199d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Slack">4498e982539023007877ddeeff7b12e3</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-22 15:17:08</sys_created_on><sys_id>de2c7b4cdb7bc010ec8adf6b5e96199d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AzureComputeUtils</sys_name><sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package><sys_policy/><sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope><sys_update_name>sys_scope_privilege_de2c7b4cdb7bc010ec8adf6b5e96199d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-22 15:17:08</sys_updated_on><target_name>AzureComputeUtils</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>2136048903</payload_hash>
+        <record_name>AzureComputeUtils</record_name>
+        <reverted_from/>
+        <source>926b75f9db230c10ec8adf6b5e961982</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-22 15:17:08</sys_created_on>
+        <sys_id>e48cfb4cdb7bc010ec8adf6b5e961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17102d1b0e40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-22 15:17:08</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>208cfb4cfe7bc01028adf35c3a8fe925</update_guid>
+        <update_guid_history>208cfb4cfe7bc01028adf35c3a8fe925:2136048903</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-22 15:17:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>20e69dc9ff314989bac4633517719fb9</sys_id>
+        <sys_metadata>de2c7b4cdb7bc010ec8adf6b5e96199d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AzureComputeUtils</sys_name>
+        <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
+        <sys_scope_delete display_value="">8a5e4ce255dd4ef996e970a02fe3c7b9</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_de2c7b4cdb7bc010ec8adf6b5e96199d</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_de2c7b4cdb7bc010ec8adf6b5e96199d">e48cfb4cdb7bc010ec8adf6b5e961925</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-22 15:17:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

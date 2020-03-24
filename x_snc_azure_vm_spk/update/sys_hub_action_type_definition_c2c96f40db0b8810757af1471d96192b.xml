@@ -9,11 +9,63 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Operation to Create a Virtual Machine from Market Place.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - Resource Location.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Publisher&lt;/b&gt; - Specifies information about the image to use,virtual machine images.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Offer&lt;/b&gt; - Specifies the offer of the platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Sku&lt;/b&gt; - The image SKU.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Versions&lt;/b&gt; - Specifies the version of the platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference ExactVersion&lt;/b&gt; - Specifies in decimal numbers, the version of platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Hardware Profile VmSize&lt;/b&gt; - Specifies the Hardware settings for the Virtual Machine,size of the VM.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;OS Disk&lt;/b&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;OsType&lt;/b&gt; - The Operating System of the osDiskImage.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Disk Name.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;CreateOption&lt;/b&gt; - Specifies How the Virtual Machine should be Created.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Caching&lt;/b&gt; - Specifies the Caching Requirements.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk SizeGB&lt;/b&gt; - Specifies the Size of an empty Data Disk in Gigabytes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;b&gt;OS Profile&lt;/b&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Computer Name&lt;/b&gt; - Specifies the host OS name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Admin Username&lt;/b&gt; - Specifies the Name of the Administrator Account.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Admin Password&lt;/b&gt; - Specifies the Password of the Administrator Account.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;AllowExtension Operations&lt;/b&gt; - Specifies whether Extension operations should be allowed on the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;b&gt;OS Storage AccountType&lt;/b&gt; - Specifies the Storage Account Type for the Managed Disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Network Interface&lt;/b&gt; - Specifies the list of Resource Ids for the Network Interfaces associated with the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>create_virtual_machine</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_group_name}}","label":"action➛Resource Group Name","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.virtual_machine_name}}","label":"action➛VM Name","type":"action","ref":""},{"name":"{{action.properties}}","label":"action➛Properties","type":"action","ref":""},{"name":"{{action.properties.location}}","label":"action➛Properties➛location","type":"action","ref":""},{"name":"{{action.properties.location.location_child1}}","label":"action➛Properties➛location➛location_child1","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.properties.Hardware}}","label":"action➛Properties➛Hardware.vmsize","type":"action","ref":""},{"name":"{{action.properties.Hardware.vmsize}}","label":"action➛Properties➛Hardware.vmsize➛vmsize","type":"action","ref":""},{"name":"{{action.properties.Storage}}","label":"action➛Properties➛Storage","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile}}","label":"action➛Properties➛Storage Profile","type":"action","ref":""},{"name":"{{action.properties._}}","label":"action➛Properties","type":"action","ref":""},{"name":"{{action.properties.osDisk}}","label":"action➛Properties➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile._}}","label":"action➛Properties➛Storage Profile","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.imageReference}}","label":"action➛Properties➛Storage Profile➛imageReference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference}}","label":"action➛Properties➛Storage Profile➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.image_reference_child1}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Image Reference_child1","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference._}}","label":"action➛Properties➛Storage Profile➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Publisher}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Publisher","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Offer}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Offer","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Sku}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Sku","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Version}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Version","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.exactVersion}}","label":"action➛Properties➛Storage Profile➛Image Reference➛exactVersion","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk}}","label":"action➛Properties➛Storage Profile➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.osType}}","label":"action➛Properties➛Storage Profile➛osDisk➛osType","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk._}}","label":"action➛Properties➛Storage Profile➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.name}}","label":"action➛Properties➛Storage Profile➛osDisk➛name","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.createOption}}","label":"action➛Properties➛Storage Profile➛osDisk➛createOption","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.caching}}","label":"action➛Properties➛Storage Profile➛osDisk➛caching","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.managedDisk}}","label":"action➛Properties➛Storage Profile➛osDisk➛managedDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.managedDisk_storage}}","label":"action➛Properties➛Storage Profile➛osDisk➛managedDisk.storage","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.ManagedDisk_StorageAccountType}}","label":"action➛Properties➛Storage Profile➛osDisk➛ManagedDisk.StorageAccountType","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Hardware_Profile_VM_Size}}","label":"action➛Properties➛Properties_child0➛Hardware Profile VM Size","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_Reference}}","label":"action➛Properties➛Properties_child0➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_Reference_Publisher}}","label":"action➛Properties➛Properties_child0➛Image Reference Publisher","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_reference_Offer}}","label":"action➛Properties➛Properties_child0➛Image reference Offer","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Type}}","label":"action➛Properties➛Properties_child0➛OS Type","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Nmae}}","label":"action➛Properties➛Properties_child0➛OS Nmae","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Name}}","label":"action➛Properties➛Properties_child0➛OS Name","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Create_Option}}","label":"action➛Properties➛Properties_child0➛OS Create Option","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Storage_Account_type}}","label":"action➛Properties➛Properties_child0➛OS Storage Account type","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Disk_size_GB}}","label":"action➛Properties➛Properties_child0➛Disk size GB","type":"action","ref":""},{"name":"{{action.hardware_profile_vm_size}}","label":"action➛Hardware Profile VM Size","type":"action","ref":""},{"name":"{{action.image_reference_publisher}}","label":"action➛Image Reference publisher","type":"action","ref":""},{"name":"{{action.image_reference_offer}}","label":"action➛Image Reference Offer","type":"action","ref":""},{"name":"{{action.os_type}}","label":"action➛OS Type","type":"action","ref":""},{"name":"{{action.os_name}}","label":"action➛OS Name","type":"action","ref":""},{"name":"{{action.os_storage_account_type}}","label":"action➛OS Storage Account Type","type":"action","ref":""},{"name":"{{action.image_reference_sku}}","label":"action➛Image Reference Sku","type":"action","ref":""},{"name":"{{action.image_reference_version}}","label":"action➛Image Reference Version","type":"action","ref":""},{"name":"{{action.image_reference_exact_version}}","label":"action➛Image Reference Exact Version","type":"action","ref":""},{"name":"{{action.os}}","label":"action➛OS","type":"action","ref":""},{"name":"{{action.os_create_option}}","label":"action➛OS Create Option","type":"action","ref":""},{"name":"{{action.os_cache}}","label":"action➛OS Cache","type":"action","ref":""},{"name":"{{action.os_caching}}","label":"action➛OS Caching","type":"action","ref":""},{"name":"{{action.os_disk_size}}","label":"action➛OS Disk Size","type":"action","ref":""},{"name":"{{action.os_profile}}","label":"action➛OS Profile","type":"action","ref":""},{"name":"{{action.os_profile.OS}}","label":"action➛OS Profile➛OS","type":"action","ref":""},{"name":"{{action.os_profile.Computer_Name}}","label":"action➛OS Profile➛Computer Name","type":"action","ref":""},{"name":"{{action.os_profile.UserName}}","label":"action➛OS Profile➛UserName","type":"action","ref":""},{"name":"{{action.os_profile.Admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.os_profile.Admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.networkinterface}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.OS_Profile}}","label":"action➛OS Profile","type":"action","ref":""},{"name":"{{action.OS_Profile.Name}}","label":"action➛OS Profile➛Name","type":"action","ref":""},{"name":"{{action.OS_Profile.computer_Name}}","label":"action➛OS Profile➛computer Name","type":"action","ref":""},{"name":"{{action.OS_Profile.Admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.Admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.OS_Profile.AllowExtensionOperations}}","label":"action➛OS Profile➛AllowExtensionOperations","type":"action","ref":""},{"name":"{{action.imageReference}}","label":"action➛Image Reference","type":"action","ref":""},{"name":"{{action.imageReference.publisher}}","label":"action➛Image Reference Offer➛Publisher","type":"action","ref":""},{"name":"{{action.imageReference.offer}}","label":"action➛Image Reference Offer➛Offer","type":"action","ref":""},{"name":"{{action.imageReference.Version}}","label":"action➛Image Reference Offer➛Version","type":"action","ref":""},{"name":"{{action.imageReference._}}","label":"action➛imageReference","type":"action","ref":""},{"name":"{{action.imageReference.sku}}","label":"action➛Image Reference Offer➛Sku","type":"action","ref":""},{"name":"{{action.imageReference.exactVersion}}","label":"action➛Image Reference Offer➛ExactVersion","type":"action","ref":""},{"name":"{{action.osdisk}}","label":"action➛OsDisk","type":"action","ref":""},{"name":"{{action.osdisk.osType}}","label":"action➛OsDisk➛OsType","type":"action","ref":""},{"name":"{{action.osdisk.name}}","label":"action➛OsDisk➛Name","type":"action","ref":""},{"name":"{{action.osdisk.createOption}}","label":"action➛OsDisk➛CreateOption","type":"action","ref":""},{"name":"{{action.osdisk.caching}}","label":"action➛OsDisk➛Caching","type":"action","ref":""},{"name":"{{action.osdisk.managedDisk}}","label":"action➛OsDisk➛Managed Disk","type":"action","ref":""},{"name":"{{action.osdisk.managedDisk.storageAccountType}}","label":"action➛OsDisk➛Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.osdisk.diskSizeGB}}","label":"action➛OsDisk➛Disk SizeGB","type":"action","ref":""},{"name":"{{action.hardwareprofile}}","label":"action➛HardwareProfile","type":"action","ref":""},{"name":"{{action.hardwareprofile._}}","label":"action➛hardwareProfile","type":"action","ref":""},{"name":"{{action.hardwareprofile.vmSize}}","label":"action➛HardwareProfile➛VmSize","type":"action","ref":""},{"name":"{{action.imageReference.version}}","label":"action➛Image Reference Offer➛Version","type":"action","ref":""},{"name":"{{action.OS_Profile.allowExtensionOperations}}","label":"action➛OS Profile➛AllowExtension Operations","type":"action","ref":""},{"name":"{{action.OS_Profile.admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.OS_Profile.computerName}}","label":"action➛OS Profile➛Computer Name","type":"action","ref":""},{"name":"{{action.OS_Profile.adminUsername}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.adminPassword}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.network_profile}}","label":"action➛Network Profile","type":"action","ref":""},{"name":"{{action.networkprofile}}","label":"action➛Network Profile","type":"action","ref":""},{"name":"{{action.networkprofile.networkInterfaces}}","label":"action➛Network Profile➛Network Interfaces","type":"action","ref":""},{"name":"{{action.networkprofile.Network_Interfaces}}","label":"action➛Network Profile➛Network Interfaces","type":"action","ref":""},{"name":"{{action.networkprofile.networkInterfaces.Id}}","label":"action➛Network Profile➛Network Interfaces➛Id","type":"action","ref":""},{"name":"{{action.networkinterfaces}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkinterfaces.Id}}","label":"action➛Ne➛Id","type":"action","ref":""},{"name":"{{action.networkInterface.Id}}","label":"action➛Network Interface➛Id","type":"action","ref":""},{"name":"{{action.networkInterface}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkInterface._}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkInterface.id}}","label":"action➛Network Interface➛Id","type":"action","ref":""},{"name":"{{action.managed}}","label":"action➛Managed","type":"action","ref":""},{"name":"{{action.manageddisk}}","label":"action➛Managed Disk","type":"action","ref":""},{"name":"{{action.managedDisk}}","label":"action➛OS Managed Disk","type":"action","ref":""},{"name":"{{action.managedDisk.Storage_AccountType}}","label":"action➛OS Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.managedDisk.storageAccountType}}","label":"action➛OS Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.os_storage_accounttype}}","label":"action➛OS Storage AccountType","type":"action","ref":""},{"name":"{{action.storageaccounttype}}","label":"action➛OS Storage AccountType","type":"action","ref":""},{"name":"{{action.hardware_profile_vmsize}}","label":"action➛Hardware Profile VmSize","type":"action","ref":""},{"name":"{{action.vmsize}}","label":"action➛Hardware Profile VmSize","type":"action","ref":""},{"name":"{{action.image_reference_versions}}","label":"action➛Image Reference Versions","type":"action","ref":""},{"name":"{{action.image_reference_exactversion}}","label":"action➛Image Reference ExactVersion","type":"action","ref":""},{"name":"{{action.publisher}}","label":"action➛Image Reference Publisher","type":"action","ref":""},{"name":"{{action.offer}}","label":"action➛Image Reference Offer","type":"action","ref":""},{"name":"{{action.sku}}","label":"action➛Image Reference Sku","type":"action","ref":""},{"name":"{{action.version}}","label":"action➛Image Reference Versions","type":"action","ref":""},{"name":"{{action.exactversion}}","label":"action➛Image Reference ExactVersion","type":"action","ref":""},{"name":"{{step[bce3729b-4233-4590-9d36-531655a6a4fb].response_body}}","label":"step➛Create Virtual Machine➛Response Body","type":"step","ref":""},{"name":"{{step[bce3729b-4233-4590-9d36-531655a6a4fb].status_code}}","label":"step➛Create Virtual Machine➛Status Code","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].variable}}","label":"step➛PostProcessing➛variable","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].variable1}}","label":"step➛PostProcessing➛variable1","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].status}}","label":"step➛PostProcessing➛Status","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].error_message}}","label":"step➛PostProcessing➛Error Message","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].temp}}","label":"step➛Pre Processing➛temp","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>5271620adbab0c10ec8adf6b5e9619ae</latest_snapshot>
+        <latest_snapshot>a82d3420dbfbc010757af1471d96193b</latest_snapshot>
         <master_snapshot>4d3aa380db0b8810757af1471d961979</master_snapshot>
         <name>Create Virtual Machine from Market Place</name>
         <natlang/>
@@ -25,7 +77,7 @@
         <sys_created_on>2020-02-14 07:08:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c2c96f40db0b8810757af1471d96192b</sys_id>
-        <sys_mod_count>302</sys_mod_count>
+        <sys_mod_count>322</sys_mod_count>
         <sys_name>Create Virtual Machine from Market Place</sys_name>
         <sys_overrides/>
         <sys_package display_value="Microsoft Azure Virtual Machine Spoke" source="x_snc_azure_vm_spk">6507a700db0b8810757af1471d96191f</sys_package>
@@ -33,7 +85,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_c2c96f40db0b8810757af1471d96192b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:41</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:06</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2570,9 +2622,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:30:31</sys_created_on>
         <sys_id>49325b4ddb2b8810ec8adf6b5e9619b5</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=49325b4ddb2b8810ec8adf6b5e9619b5"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -2664,9 +2716,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 09:08:15</sys_created_on>
         <sys_id>5f2887b8dbef4810ec8adf6b5e9619be</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5f2887b8dbef4810ec8adf6b5e9619be"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2786,9 +2838,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 17:33:33</sys_created_on>
         <sys_id>d1db340ddbe38810ec8adf6b5e96199e</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d1db340ddbe38810ec8adf6b5e96199e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2908,9 +2960,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-03 05:53:04</sys_created_on>
         <sys_id>e8358ccadb5b4450757af1471d9619b4</sys_id>
-        <sys_mod_count>94</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e8358ccadb5b4450757af1471d9619b4"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -3326,9 +3378,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 03:15:05</sys_created_on>
         <sys_id>3fe04f41db2b8810ec8adf6b5e9619f0</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3fe04f41db2b8810ec8adf6b5e9619f0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3448,9 +3500,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:15:25</sys_created_on>
         <sys_id>f3be07c9db2b8810ec8adf6b5e96192d</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f3be07c9db2b8810ec8adf6b5e96192d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3651,9 +3703,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-16 03:31:12</sys_created_on>
         <sys_id>c961aec6dbab0c10ec8adf6b5e961966</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c961aec6dbab0c10ec8adf6b5e961966"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3773,9 +3825,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 17:23:39</sys_created_on>
         <sys_id>90993089dbe38810ec8adf6b5e9619dc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:24</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:37:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=90993089dbe38810ec8adf6b5e9619dc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7052,13 +7104,13 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Virtual Machine from Market Place">c2c96f40db0b8810757af1471d96192b</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d93aa380db0b8810757af1471d9619b9","name":"plan"}}</plan>
-        <snapshot>5271620adbab0c10ec8adf6b5e9619ae</snapshot>
+        <snapshot>a82d3420dbfbc010757af1471d96193b</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-02-14 07:10:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d93aa380db0b8810757af1471d9619b9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -7066,7 +7118,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:47</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:12</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -7077,7 +7129,59 @@
         <category display_value="Instance Management">eee5b6a1dbdf0450757af1471d9619e8</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;The Operation to Create a Virtual Machine from Market Place.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Subscription ID&lt;/b&gt; - Uniquely Identify Microsoft Azure Subscription ID.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Resource GroupName&lt;/b&gt; - Name of the Resource Group.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VM Name&lt;/b&gt; - Name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Location&lt;/b&gt; - Resource Location.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Publisher&lt;/b&gt; - Specifies information about the image to use,virtual machine images.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Offer&lt;/b&gt; - Specifies the offer of the platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Sku&lt;/b&gt; - The image SKU.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference Versions&lt;/b&gt; - Specifies the version of the platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Image Reference ExactVersion&lt;/b&gt; - Specifies in decimal numbers, the version of platform image or marketplace image used to create the virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Hardware Profile VmSize&lt;/b&gt; - Specifies the Hardware settings for the Virtual Machine,size of the VM.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;OS Disk&lt;/b&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;OsType&lt;/b&gt; - The Operating System of the osDiskImage.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Disk Name.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;CreateOption&lt;/b&gt; - Specifies How the Virtual Machine should be Created.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Caching&lt;/b&gt; - Specifies the Caching Requirements.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Disk SizeGB&lt;/b&gt; - Specifies the Size of an empty Data Disk in Gigabytes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;b&gt;OS Profile&lt;/b&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Computer Name&lt;/b&gt; - Specifies the host OS name of the Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Admin Username&lt;/b&gt; - Specifies the Name of the Administrator Account.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Admin Password&lt;/b&gt; - Specifies the Password of the Administrator Account.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;AllowExtension Operations&lt;/b&gt; - Specifies whether Extension operations should be allowed on the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;b&gt;OS Storage AccountType&lt;/b&gt; - Specifies the Storage Account Type for the Managed Disk.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Network Interface&lt;/b&gt; - Specifies the list of Resource Ids for the Network Interfaces associated with the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure in Virtual Machine Occurs.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+The status will be Error only in case of any failure in Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt; Subscription ID Invalid or Missing&lt;/li&gt;
+&lt;li&gt;ResourecGroup Name Already Exists&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Unknown Error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; To use this action, a corresponding Microsoft Azure Virtual Machine connection and credential must be created and associated with the Microsoft Azure Virtual Machine Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>create_virtual_machine</internal_name>
         <label_cache>[{"name":"{{action.subscription_id}}","label":"action➛Subscription ID","type":"action","ref":""},{"name":"{{action.resource_group_name}}","label":"action➛Resource Group Name","type":"action","ref":""},{"name":"{{action.resource_groupname}}","label":"action➛Resource GroupName","type":"action","ref":""},{"name":"{{action.virtual_machine_name}}","label":"action➛VM Name","type":"action","ref":""},{"name":"{{action.properties}}","label":"action➛Properties","type":"action","ref":""},{"name":"{{action.properties.location}}","label":"action➛Properties➛location","type":"action","ref":""},{"name":"{{action.properties.location.location_child1}}","label":"action➛Properties➛location➛location_child1","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛Location","type":"action","ref":""},{"name":"{{action.properties.Hardware}}","label":"action➛Properties➛Hardware.vmsize","type":"action","ref":""},{"name":"{{action.properties.Hardware.vmsize}}","label":"action➛Properties➛Hardware.vmsize➛vmsize","type":"action","ref":""},{"name":"{{action.properties.Storage}}","label":"action➛Properties➛Storage","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile}}","label":"action➛Properties➛Storage Profile","type":"action","ref":""},{"name":"{{action.properties._}}","label":"action➛Properties","type":"action","ref":""},{"name":"{{action.properties.osDisk}}","label":"action➛Properties➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile._}}","label":"action➛Properties➛Storage Profile","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.imageReference}}","label":"action➛Properties➛Storage Profile➛imageReference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference}}","label":"action➛Properties➛Storage Profile➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.image_reference_child1}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Image Reference_child1","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference._}}","label":"action➛Properties➛Storage Profile➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Publisher}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Publisher","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Offer}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Offer","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Sku}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Sku","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.Version}}","label":"action➛Properties➛Storage Profile➛Image Reference➛Version","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.Image_Reference.exactVersion}}","label":"action➛Properties➛Storage Profile➛Image Reference➛exactVersion","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk}}","label":"action➛Properties➛Storage Profile➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.osType}}","label":"action➛Properties➛Storage Profile➛osDisk➛osType","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk._}}","label":"action➛Properties➛Storage Profile➛osDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.name}}","label":"action➛Properties➛Storage Profile➛osDisk➛name","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.createOption}}","label":"action➛Properties➛Storage Profile➛osDisk➛createOption","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.caching}}","label":"action➛Properties➛Storage Profile➛osDisk➛caching","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.managedDisk}}","label":"action➛Properties➛Storage Profile➛osDisk➛managedDisk","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.managedDisk_storage}}","label":"action➛Properties➛Storage Profile➛osDisk➛managedDisk.storage","type":"action","ref":""},{"name":"{{action.properties.Storage_Profile.osDisk.ManagedDisk_StorageAccountType}}","label":"action➛Properties➛Storage Profile➛osDisk➛ManagedDisk.StorageAccountType","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Hardware_Profile_VM_Size}}","label":"action➛Properties➛Properties_child0➛Hardware Profile VM Size","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_Reference}}","label":"action➛Properties➛Properties_child0➛Image Reference","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_Reference_Publisher}}","label":"action➛Properties➛Properties_child0➛Image Reference Publisher","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Image_reference_Offer}}","label":"action➛Properties➛Properties_child0➛Image reference Offer","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Type}}","label":"action➛Properties➛Properties_child0➛OS Type","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Nmae}}","label":"action➛Properties➛Properties_child0➛OS Nmae","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Name}}","label":"action➛Properties➛Properties_child0➛OS Name","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Create_Option}}","label":"action➛Properties➛Properties_child0➛OS Create Option","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.OS_Storage_Account_type}}","label":"action➛Properties➛Properties_child0➛OS Storage Account type","type":"action","ref":""},{"name":"{{action.properties.Properties_child0.Disk_size_GB}}","label":"action➛Properties➛Properties_child0➛Disk size GB","type":"action","ref":""},{"name":"{{action.hardware_profile_vm_size}}","label":"action➛Hardware Profile VM Size","type":"action","ref":""},{"name":"{{action.image_reference_publisher}}","label":"action➛Image Reference publisher","type":"action","ref":""},{"name":"{{action.image_reference_offer}}","label":"action➛Image Reference Offer","type":"action","ref":""},{"name":"{{action.os_type}}","label":"action➛OS Type","type":"action","ref":""},{"name":"{{action.os_name}}","label":"action➛OS Name","type":"action","ref":""},{"name":"{{action.os_storage_account_type}}","label":"action➛OS Storage Account Type","type":"action","ref":""},{"name":"{{action.image_reference_sku}}","label":"action➛Image Reference Sku","type":"action","ref":""},{"name":"{{action.image_reference_version}}","label":"action➛Image Reference Version","type":"action","ref":""},{"name":"{{action.image_reference_exact_version}}","label":"action➛Image Reference Exact Version","type":"action","ref":""},{"name":"{{action.os}}","label":"action➛OS","type":"action","ref":""},{"name":"{{action.os_create_option}}","label":"action➛OS Create Option","type":"action","ref":""},{"name":"{{action.os_cache}}","label":"action➛OS Cache","type":"action","ref":""},{"name":"{{action.os_caching}}","label":"action➛OS Caching","type":"action","ref":""},{"name":"{{action.os_disk_size}}","label":"action➛OS Disk Size","type":"action","ref":""},{"name":"{{action.os_profile}}","label":"action➛OS Profile","type":"action","ref":""},{"name":"{{action.os_profile.OS}}","label":"action➛OS Profile➛OS","type":"action","ref":""},{"name":"{{action.os_profile.Computer_Name}}","label":"action➛OS Profile➛Computer Name","type":"action","ref":""},{"name":"{{action.os_profile.UserName}}","label":"action➛OS Profile➛UserName","type":"action","ref":""},{"name":"{{action.os_profile.Admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.os_profile.Admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.networkinterface}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.OS_Profile}}","label":"action➛OS Profile","type":"action","ref":""},{"name":"{{action.OS_Profile.Name}}","label":"action➛OS Profile➛Name","type":"action","ref":""},{"name":"{{action.OS_Profile.computer_Name}}","label":"action➛OS Profile➛computer Name","type":"action","ref":""},{"name":"{{action.OS_Profile.Admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.Admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.OS_Profile.AllowExtensionOperations}}","label":"action➛OS Profile➛AllowExtensionOperations","type":"action","ref":""},{"name":"{{action.imageReference}}","label":"action➛Image Reference","type":"action","ref":""},{"name":"{{action.imageReference.publisher}}","label":"action➛Image Reference Offer➛Publisher","type":"action","ref":""},{"name":"{{action.imageReference.offer}}","label":"action➛Image Reference Offer➛Offer","type":"action","ref":""},{"name":"{{action.imageReference.Version}}","label":"action➛Image Reference Offer➛Version","type":"action","ref":""},{"name":"{{action.imageReference._}}","label":"action➛imageReference","type":"action","ref":""},{"name":"{{action.imageReference.sku}}","label":"action➛Image Reference Offer➛Sku","type":"action","ref":""},{"name":"{{action.imageReference.exactVersion}}","label":"action➛Image Reference Offer➛ExactVersion","type":"action","ref":""},{"name":"{{action.osdisk}}","label":"action➛OsDisk","type":"action","ref":""},{"name":"{{action.osdisk.osType}}","label":"action➛OsDisk➛OsType","type":"action","ref":""},{"name":"{{action.osdisk.name}}","label":"action➛OsDisk➛Name","type":"action","ref":""},{"name":"{{action.osdisk.createOption}}","label":"action➛OsDisk➛CreateOption","type":"action","ref":""},{"name":"{{action.osdisk.caching}}","label":"action➛OsDisk➛Caching","type":"action","ref":""},{"name":"{{action.osdisk.managedDisk}}","label":"action➛OsDisk➛Managed Disk","type":"action","ref":""},{"name":"{{action.osdisk.managedDisk.storageAccountType}}","label":"action➛OsDisk➛Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.osdisk.diskSizeGB}}","label":"action➛OsDisk➛Disk SizeGB","type":"action","ref":""},{"name":"{{action.hardwareprofile}}","label":"action➛HardwareProfile","type":"action","ref":""},{"name":"{{action.hardwareprofile._}}","label":"action➛hardwareProfile","type":"action","ref":""},{"name":"{{action.hardwareprofile.vmSize}}","label":"action➛HardwareProfile➛VmSize","type":"action","ref":""},{"name":"{{action.imageReference.version}}","label":"action➛Image Reference Offer➛Version","type":"action","ref":""},{"name":"{{action.OS_Profile.allowExtensionOperations}}","label":"action➛OS Profile➛AllowExtension Operations","type":"action","ref":""},{"name":"{{action.OS_Profile.admin_Username}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.admin_Password}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.OS_Profile.computerName}}","label":"action➛OS Profile➛Computer Name","type":"action","ref":""},{"name":"{{action.OS_Profile.adminUsername}}","label":"action➛OS Profile➛Admin Username","type":"action","ref":""},{"name":"{{action.OS_Profile.adminPassword}}","label":"action➛OS Profile➛Admin Password","type":"action","ref":""},{"name":"{{action.network_profile}}","label":"action➛Network Profile","type":"action","ref":""},{"name":"{{action.networkprofile}}","label":"action➛Network Profile","type":"action","ref":""},{"name":"{{action.networkprofile.networkInterfaces}}","label":"action➛Network Profile➛Network Interfaces","type":"action","ref":""},{"name":"{{action.networkprofile.Network_Interfaces}}","label":"action➛Network Profile➛Network Interfaces","type":"action","ref":""},{"name":"{{action.networkprofile.networkInterfaces.Id}}","label":"action➛Network Profile➛Network Interfaces➛Id","type":"action","ref":""},{"name":"{{action.networkinterfaces}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkinterfaces.Id}}","label":"action➛Ne➛Id","type":"action","ref":""},{"name":"{{action.networkInterface.Id}}","label":"action➛Network Interface➛Id","type":"action","ref":""},{"name":"{{action.networkInterface}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkInterface._}}","label":"action➛Network Interface","type":"action","ref":""},{"name":"{{action.networkInterface.id}}","label":"action➛Network Interface➛Id","type":"action","ref":""},{"name":"{{action.managed}}","label":"action➛Managed","type":"action","ref":""},{"name":"{{action.manageddisk}}","label":"action➛Managed Disk","type":"action","ref":""},{"name":"{{action.managedDisk}}","label":"action➛OS Managed Disk","type":"action","ref":""},{"name":"{{action.managedDisk.Storage_AccountType}}","label":"action➛OS Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.managedDisk.storageAccountType}}","label":"action➛OS Managed Disk➛Storage AccountType","type":"action","ref":""},{"name":"{{action.os_storage_accounttype}}","label":"action➛OS Storage AccountType","type":"action","ref":""},{"name":"{{action.storageaccounttype}}","label":"action➛OS Storage AccountType","type":"action","ref":""},{"name":"{{action.hardware_profile_vmsize}}","label":"action➛Hardware Profile VmSize","type":"action","ref":""},{"name":"{{action.vmsize}}","label":"action➛Hardware Profile VmSize","type":"action","ref":""},{"name":"{{action.image_reference_versions}}","label":"action➛Image Reference Versions","type":"action","ref":""},{"name":"{{action.image_reference_exactversion}}","label":"action➛Image Reference ExactVersion","type":"action","ref":""},{"name":"{{action.publisher}}","label":"action➛Image Reference Publisher","type":"action","ref":""},{"name":"{{action.offer}}","label":"action➛Image Reference Offer","type":"action","ref":""},{"name":"{{action.sku}}","label":"action➛Image Reference Sku","type":"action","ref":""},{"name":"{{action.version}}","label":"action➛Image Reference Versions","type":"action","ref":""},{"name":"{{action.exactversion}}","label":"action➛Image Reference ExactVersion","type":"action","ref":""},{"name":"{{step[bce3729b-4233-4590-9d36-531655a6a4fb].response_body}}","label":"step➛Create Virtual Machine➛Response Body","type":"step","ref":""},{"name":"{{step[bce3729b-4233-4590-9d36-531655a6a4fb].status_code}}","label":"step➛Create Virtual Machine➛Status Code","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].variable}}","label":"step➛PostProcessing➛variable","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].variable1}}","label":"step➛PostProcessing➛variable1","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].status}}","label":"step➛PostProcessing➛Status","type":"step","ref":""},{"name":"{{step[d43db748-33bc-44b6-bd76-2a58ecde055f].error_message}}","label":"step➛PostProcessing➛Error Message","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].temp}}","label":"step➛Pre Processing➛temp","type":"step","ref":""},{"name":"{{step[78b7d66a-e329-47f2-9e4e-0c3eff0c7b24].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -7091,7 +7195,7 @@
         <sys_created_on>2020-02-14 07:10:04</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>4d3aa380db0b8810757af1471d961979</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -7099,7 +7203,7 @@
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-12 09:10:16</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -9641,9 +9745,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:15:52</sys_created_on>
         <sys_id>56de0bc9db2b8810ec8adf6b5e9619d5</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=56de0bc9db2b8810ec8adf6b5e9619d5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -9763,9 +9867,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 09:10:17</sys_created_on>
         <sys_id>55a8cfb8dbef4810ec8adf6b5e961907</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=55a8cfb8dbef4810ec8adf6b5e961907"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -9881,7 +9985,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDaf71e20a2aab0c104098233c81978009,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=18b7cf4c-925d-42bf-a0a6-550b94703b0c</attributes>
+        <attributes>co_type_name=FDb92d742078fbc010f12f5183b1d46286,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=18b7cf4c-925d-42bf-a0a6-550b94703b0c</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -9939,14 +10043,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-09 16:59:13</sys_created_on>
         <sys_id>513751c8dba30810ec8adf6b5e9619e4</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10047,16 +10151,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 04:30:45</sys_created_on>
         <sys_id>9c421f4ddb2b8810ec8adf6b5e9619a9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c421f4ddb2b8810ec8adf6b5e9619a9"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD2f71e20addab0c106119021fbe828f0b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1ebeb7b7-5039-49da-a129-8badb506d545</attributes>
+        <attributes>co_type_name=FD352d7420b2fbc010458c6ec89012af88,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1ebeb7b7-5039-49da-a129-8badb506d545</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10114,14 +10218,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-09 17:18:37</sys_created_on>
         <sys_id>5dabdd4cdba30810ec8adf6b5e961939</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Microsoft Azure Virtual Machine Spoke">6507a700db0b8810757af1471d96191f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10222,9 +10326,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-13 03:19:33</sys_created_on>
         <sys_id>11f18b81db2b8810ec8adf6b5e9619a2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=11f18b81db2b8810ec8adf6b5e9619a2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10344,9 +10448,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-03 05:53:18</sys_created_on>
         <sys_id>0845400edb5b4450757af1471d96197d</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:38</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0845400edb5b4450757af1471d96197d"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -10438,9 +10542,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 17:24:36</sys_created_on>
         <sys_id>d2c9f489dbe38810ec8adf6b5e961931</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d2c9f489dbe38810ec8adf6b5e961931"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10641,9 +10745,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-12 17:34:26</sys_created_on>
         <sys_id>1a0c780ddbe38810ec8adf6b5e9619b7</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1a0c780ddbe38810ec8adf6b5e9619b7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10844,9 +10948,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-16 03:31:39</sys_created_on>
         <sys_id>3371e20adbab0c10ec8adf6b5e961946</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:31:39</sys_updated_on>
+        <sys_updated_on>2020-03-23 14:38:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3371e20adbab0c10ec8adf6b5e961946"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
